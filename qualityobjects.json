@@ -1,0 +1,3517 @@
+[{
+  "description": "Satellite comparison",
+  "endDate": "2018-11-11T00:00:00.000Z",
+  "startDate": "2018-01-01T00:00:00.000Z",
+  "sensorCode": "S000007",
+  "stationCode": "TA00001"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2018-06-30T00:00:00.000Z",
+  "startDate": "2018-06-01T00:00:00.000Z",
+  "sensorCode": "S000288",
+  "stationCode": "TA00274"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-10-31T00:00:00.000Z",
+  "startDate": "2018-06-01T00:00:00.000Z",
+  "sensorCode": "S000128",
+  "stationCode": "TA00114"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-06-30T00:00:00.000Z",
+  "startDate": "2018-05-01T00:00:00.000Z",
+  "sensorCode": "S000306",
+  "stationCode": "TA00292"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-04-01T00:00:00.000Z",
+  "sensorCode": "S000063",
+  "stationCode": "TA00014"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2017-10-31T23:55:00.000Z",
+  "startDate": "2016-03-01T00:00:00.000Z",
+  "sensorCode": "S000052",
+  "stationCode": "TA00012"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2019-10-31T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000077",
+  "stationCode": "TA00018"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-05-31T00:00:00.000Z",
+  "startDate": "2018-05-01T00:00:00.000Z",
+  "sensorCode": "S000139",
+  "stationCode": "TA00125"
+},{
+  "description": "The station record no data during this period which is also confirmed by satellite comparison ",
+  "endDate": "2018-10-31T00:00:00.000Z",
+  "startDate": "2018-03-09T00:00:00.000Z",
+  "sensorCode": "S000094",
+  "stationCode": "TA00021"
+},{
+  "description": "The sensor looks clogged or the station might be offline",
+  "endDate": "2017-10-31T00:00:00.000Z",
+  "startDate": "2017-05-01T00:00:00.000Z",
+  "sensorCode": "S000130",
+  "stationCode": "TA00116"
+},{
+  "description": "Very low monthly precipitation totals comparing to the atmos and satellites.",
+  "endDate": "2018-12-31T00:00:00.000Z",
+  "startDate": "2017-09-03T00:00:00.000Z",
+  "sensorCode": "S000232",
+  "stationCode": "TA00224"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-05-19T00:00:00.000Z",
+  "startDate": "2019-06-01T00:00:00.000Z",
+  "sensorCode": "S000250",
+  "stationCode": "TA00240"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000258",
+  "stationCode": "TA00248"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000323",
+  "stationCode": "TA00313"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2018-03-22T00:00:00.000Z",
+  "startDate": "2017-02-01T00:00:00.000Z",
+  "sensorCode": "S000061",
+  "stationCode": "TA00014"
+},{
+  "description": "The sensor looks clogged or the station might be offline",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2018-06-01T00:00:00.000Z",
+  "sensorCode": "S000130",
+  "stationCode": "TA00116"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-03-31T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000188",
+  "stationCode": "TA00183"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2017-12-31T00:00:00.000Z",
+  "startDate": "2016-01-01T00:00:00.000Z",
+  "sensorCode": "S000040",
+  "stationCode": "TA00009"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2018-08-31T23:55:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000020",
+  "stationCode": "TA00004"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites.",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000129",
+  "stationCode": "TA00115"
+},{
+  "description": "extreme high records comparing to the satellite",
+  "endDate": "2017-11-30T00:00:00.000Z",
+  "startDate": "2017-11-01T00:00:00.000Z",
+  "sensorCode": "S000133",
+  "stationCode": "TA00119"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites because of battery issue",
+  "endDate": "2018-10-31T00:00:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000157",
+  "stationCode": "TA00150"
+},{
+  "description": "Low battery, data missing.",
+  "endDate": "2019-10-19T08:00:00.000Z",
+  "startDate": "2019-05-31T00:00:00.000Z",
+  "sensorCode": "S000476",
+  "stationCode": "TA00494"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites. the sensor was replaced on the above date",
+  "endDate": "2019-10-15T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000324",
+  "stationCode": "TA00314"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2016-12-31T23:55:00.000Z",
+  "startDate": "2016-01-01T00:00:00.000Z",
+  "sensorCode": "S000020",
+  "stationCode": "TA00004"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2019-07-02T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S000028",
+  "stationCode": "TA00006"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2017-12-31T00:00:00.000Z",
+  "startDate": "2017-09-01T00:00:00.000Z",
+  "sensorCode": "S000229",
+  "stationCode": "TA00222"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2019-09-08T00:00:00.000Z",
+  "startDate": "2018-01-01T00:00:00.000Z",
+  "sensorCode": "S000044",
+  "stationCode": "TA00010"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2016-12-31T23:55:00.000Z",
+  "startDate": "2016-04-01T00:00:00.000Z",
+  "sensorCode": "S000011",
+  "stationCode": "TA00002"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2019-02-28T23:55:00.000Z",
+  "startDate": "2018-09-01T00:00:00.000Z",
+  "sensorCode": "S000040",
+  "stationCode": "TA00009"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2016-12-31T23:55:00.000Z",
+  "startDate": "2016-02-01T00:00:00.000Z",
+  "sensorCode": "S000048",
+  "stationCode": "TA00011"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2017-05-31T00:00:00.000Z",
+  "startDate": "2017-05-01T00:00:00.000Z",
+  "sensorCode": "S000942",
+  "stationCode": "TA00137"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-04-30T00:00:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000187",
+  "stationCode": "TA00182"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2017-08-31T00:00:00.000Z",
+  "startDate": "2016-10-01T00:00:00.000Z",
+  "sensorCode": "S000032",
+  "stationCode": "TA00007"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2017-02-01T00:00:00.000Z",
+  "startDate": "2016-04-01T00:00:00.000Z",
+  "sensorCode": "S000015",
+  "stationCode": "TA00003"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-04-30T00:00:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000134",
+  "stationCode": "TA00120"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2022-12-12T00:00:00.000Z",
+  "startDate": "2015-06-09T00:00:00.000Z",
+  "sensorCode": "S000097",
+  "stationCode": "TA00022"
+},{
+  "description": "Low battery, data missing.",
+  "endDate": "2019-10-19T08:00:00.000Z",
+  "startDate": "2019-05-31T00:00:00.000Z",
+  "sensorCode": "S000475",
+  "stationCode": "TA00494"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000317",
+  "stationCode": "TA00305"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2017-06-30T00:00:00.000Z",
+  "startDate": "2017-03-01T00:00:00.000Z",
+  "sensorCode": "S000066",
+  "stationCode": "TA00015"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2017-05-31T00:00:00.000Z",
+  "startDate": "2017-05-01T00:00:00.000Z",
+  "sensorCode": "S000142",
+  "stationCode": "TA00131"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000148",
+  "stationCode": "TA00138"
+},{
+  "description": "field engineer report that the rain gauge was clogged.",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000219",
+  "stationCode": "TA00215"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-11-30T23:55:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000320",
+  "stationCode": "TA00309"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2016-12-31T23:55:00.000Z",
+  "startDate": "2015-10-01T00:00:00.000Z",
+  "sensorCode": "S000057",
+  "stationCode": "TA00013"
+},{
+  "description": "Rain-gauge looks to be  clogged comparing to satellite data",
+  "endDate": "2019-08-31T00:00:00.000Z",
+  "startDate": "2017-06-01T00:00:00.000Z",
+  "sensorCode": "S000126",
+  "stationCode": "TA00112"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-04-30T00:00:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000165",
+  "stationCode": "TA00158"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-05-01T00:00:00.000Z",
+  "sensorCode": "S000147",
+  "stationCode": "TA00136"
+},{
+  "description": "while the atmos and the satellites record similar data, this sensor record zero.",
+  "endDate": "2018-05-31T00:00:00.000Z",
+  "startDate": "2018-05-01T00:00:00.000Z",
+  "sensorCode": "S000287",
+  "stationCode": "TA00273"
+},{
+  "description": "Satellite comparison.",
+  "endDate": "2018-06-30T23:55:00.000Z",
+  "startDate": "2017-12-01T00:00:00.000Z",
+  "sensorCode": "S000113",
+  "stationCode": "TA00025"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2018-06-01T00:00:00.000Z",
+  "sensorCode": "S000181",
+  "stationCode": "TA00174"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000152",
+  "stationCode": "TA00144"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-09-30T00:00:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000156",
+  "stationCode": "TA00149"
+},{
+  "description": "Very low monthly precipitation totals comparing to ECRN-100 and the satellites",
+  "endDate": "2018-12-31T00:00:00.000Z",
+  "startDate": "2018-09-01T00:00:00.000Z",
+  "sensorCode": "S000236",
+  "stationCode": "TA00228"
+},{
+  "description": "satellite comparison ",
+  "endDate": "2016-06-30T23:55:00.000Z",
+  "startDate": "2016-03-01T00:00:00.000Z",
+  "sensorCode": "S000024",
+  "stationCode": "TA00005"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-10-31T00:00:00.000Z",
+  "startDate": "2018-05-01T00:00:00.000Z",
+  "sensorCode": "S000169",
+  "stationCode": "TA00162"
+},{
+  "description": "The sensor looks clogged or the station might be offline",
+  "endDate": "2017-08-31T00:00:00.000Z",
+  "startDate": "2017-08-01T00:00:00.000Z",
+  "sensorCode": "S000172",
+  "stationCode": "TA00165"
+},{
+  "description": "Very low monthly precipitation totals comparing to the ECRN-100 and the satellites",
+  "endDate": "2018-12-31T00:00:00.000Z",
+  "startDate": "2017-09-01T00:00:00.000Z",
+  "sensorCode": "S000238",
+  "stationCode": "TA00229"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2018-03-31T00:00:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000280",
+  "stationCode": "TA00270"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2018-06-01T00:00:00.000Z",
+  "sensorCode": "S000326",
+  "stationCode": "TA00316"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2020-02-10T00:00:00.000Z",
+  "startDate": "2018-11-01T00:00:00.000Z",
+  "sensorCode": "S000472",
+  "stationCode": "TA00486"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000396",
+  "stationCode": "TA00387"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2020-04-30T23:55:00.000Z",
+  "startDate": "2019-04-01T00:00:00.000Z",
+  "sensorCode": "S000638",
+  "stationCode": "TA00042"
+},{
+  "description": "the station was blocked.",
+  "endDate": "2020-05-31T00:00:00.000Z",
+  "startDate": "2019-08-01T00:00:00.000Z",
+  "sensorCode": "S000591",
+  "stationCode": "TA00032"
+},{
+  "description": "The sensor has been clogged",
+  "endDate": "2021-01-11T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000228",
+  "stationCode": "TA00221"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-11-30T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000127",
+  "stationCode": "TA00113"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-12-01T00:00:00.000Z",
+  "sensorCode": "S000422",
+  "stationCode": "TA00416"
+},{
+  "description": "The sensor might be clogged",
+  "endDate": "2020-11-04T00:00:00.000Z",
+  "startDate": "2019-06-01T00:00:00.000Z",
+  "sensorCode": "S001157",
+  "stationCode": "TA00628"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-10-31T00:00:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S001167",
+  "stationCode": "TA00631"
+},{
+  "description": "The sensor was faulty. now it is replaced.",
+  "endDate": "2020-06-25T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001188",
+  "stationCode": "TA00005"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-10-31T23:59:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000416",
+  "stationCode": "TA00408"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-11-30T23:55:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000972",
+  "stationCode": "TA00590"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-09-30T23:55:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000493",
+  "stationCode": "TA00524"
+},{
+  "description": "the station record very high amount. some times 1000mm in just 4 hours",
+  "endDate": "2019-12-12T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S000479",
+  "stationCode": "TA00508"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S000586",
+  "stationCode": "TA00031"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S001161",
+  "stationCode": "TA00629"
+},{
+  "description": "the station record very few daily data",
+  "endDate": "2020-05-15T00:00:00.000Z",
+  "startDate": "2019-12-14T00:00:00.000Z",
+  "sensorCode": "S001324",
+  "stationCode": "TA00690"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-06-02T23:55:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001002",
+  "stationCode": "TA00216"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-07-31T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000352",
+  "stationCode": "TA00342"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites ",
+  "endDate": "2019-11-15T00:00:00.000Z",
+  "startDate": "2019-05-01T00:00:00.000Z",
+  "sensorCode": "S000068",
+  "stationCode": "TA00015"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-07-25T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000657",
+  "stationCode": "TA00046"
+},{
+  "description": "record very high rainfall",
+  "endDate": "2020-05-22T00:00:00.000Z",
+  "startDate": "2020-04-16T00:00:00.000Z",
+  "sensorCode": "S000571",
+  "stationCode": "TA00028"
+},{
+  "description": "The sensor was  clogged",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000724",
+  "stationCode": "TA00061"
+},{
+  "description": "it is very high. maybe some water was put on it or had lightning effect",
+  "endDate": "2020-03-26T23:55:00.000Z",
+  "startDate": "2020-03-26T00:00:00.000Z",
+  "sensorCode": "S000388",
+  "stationCode": "TA00379"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-02-01T00:00:00.000Z",
+  "sensorCode": "S001014",
+  "stationCode": "TA00312"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2018-12-31T00:00:00.000Z",
+  "startDate": "2018-02-01T00:00:00.000Z",
+  "sensorCode": "S000389",
+  "stationCode": "TA00380"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-02-28T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S000380",
+  "stationCode": "TA00371"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000224",
+  "stationCode": "TA00218"
+},{
+  "description": "The data logger record only 8% of the data it should have record. and it will be replaced soon.",
+  "endDate": "2020-05-16T00:00:00.000Z",
+  "startDate": "2019-12-13T00:00:00.000Z",
+  "sensorCode": "S000263",
+  "stationCode": "TA00253"
+},{
+  "description": "The sensor looks clogged and then confirmed that it didn't work. it is now replaced.",
+  "endDate": "2020-08-10T00:00:00.000Z",
+  "startDate": "2019-11-01T00:00:00.000Z",
+  "sensorCode": "S000369",
+  "stationCode": "TA00360"
+},{
+  "description": "it is very high. maybe some water is put on it",
+  "endDate": "2019-05-25T23:55:00.000Z",
+  "startDate": "2019-05-25T00:00:00.000Z",
+  "sensorCode": "S000415",
+  "stationCode": "TA00407"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-07-31T00:00:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000403",
+  "stationCode": "TA00394"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-12-31T00:00:00.000Z",
+  "startDate": "2018-05-01T00:00:00.000Z",
+  "sensorCode": "S000420",
+  "stationCode": "TA00413"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites and Atmos.",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2017-12-01T00:00:00.000Z",
+  "sensorCode": "S000474",
+  "stationCode": "TA00493"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S000082",
+  "stationCode": "TA00019"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-08-31T00:00:00.000Z",
+  "startDate": "2019-04-01T00:00:00.000Z",
+  "sensorCode": "S001164",
+  "stationCode": "TA00630"
+},{
+  "description": "The data logger record only 8% of the data it should have record. and it will be replaced soon.",
+  "endDate": "2020-05-09T00:00:00.000Z",
+  "startDate": "2019-12-20T00:00:00.000Z",
+  "sensorCode": "S000627",
+  "stationCode": "TA00039"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-02-29T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001149",
+  "stationCode": "TA00625"
+},{
+  "description": "Very low monthly precipitation totals. the sensor has been replaced on 19-10-2020.",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2019-06-06T15:45:00.000Z",
+  "sensorCode": "S001010",
+  "stationCode": "TA00230"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-01-08T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000226",
+  "stationCode": "TA00220"
+},{
+  "description": "The sensor was clogged and then replaced",
+  "endDate": "2020-05-26T00:00:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S001176",
+  "stationCode": "TA00225"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-05-31T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S000408",
+  "stationCode": "TA00399"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2018-10-01T00:00:00.000Z",
+  "sensorCode": "S000436",
+  "stationCode": "TA00437"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T23:55:00.000Z",
+  "startDate": "2018-03-22T00:00:00.000Z",
+  "sensorCode": "S000601",
+  "stationCode": "TA00034"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-04-30T00:00:00.000Z",
+  "startDate": "2019-04-01T00:00:00.000Z",
+  "sensorCode": "S000277",
+  "stationCode": "TA00268"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-08-31T00:00:00.000Z",
+  "startDate": "2019-04-01T00:00:00.000Z",
+  "sensorCode": "S001170",
+  "stationCode": "TA00632"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-08-09T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000798",
+  "stationCode": "TA00075"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-06-22T00:00:00.000Z",
+  "startDate": "2020-06-21T00:00:00.000Z",
+  "sensorCode": "S000356",
+  "stationCode": "TA00346"
+},{
+  "description": "The sensor was clogged and then has been replaced",
+  "endDate": "2020-10-21T00:00:00.000Z",
+  "startDate": "2019-11-01T00:00:00.000Z",
+  "sensorCode": "S001095",
+  "stationCode": "TA00232"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-04-30T23:55:00.000Z",
+  "startDate": "2019-08-01T00:00:00.000Z",
+  "sensorCode": "S000336",
+  "stationCode": "TA00326"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-18T00:00:00.000Z",
+  "startDate": "2018-12-01T00:00:00.000Z",
+  "sensorCode": "S000381",
+  "stationCode": "TA00372"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-09-01T00:00:00.000Z",
+  "sensorCode": "S001163",
+  "stationCode": "TA00630"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-05-13T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000289",
+  "stationCode": "TA00275"
+},{
+  "description": "School was closed and site over grown with weeds reaching ECRN-100 leading to clogging by pollen and algae...... now 5 months later the ECRN looks broken.",
+  "endDate": "2021-01-31T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000224",
+  "stationCode": "TA00218"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-21T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000350",
+  "stationCode": "TA00340"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T23:55:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000424",
+  "stationCode": "TA00429"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000123",
+  "stationCode": "TA00109"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-08-01T00:00:00.000Z",
+  "sensorCode": "S000226",
+  "stationCode": "TA00220"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-05-15T00:15:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001001",
+  "stationCode": "TA00214"
+},{
+  "description": "some water was added to check the consistency of the two rain gauges after cleaning",
+  "endDate": "2020-09-07T13:30:00.000Z",
+  "startDate": "2020-09-07T11:15:00.000Z",
+  "sensorCode": "S000953",
+  "stationCode": "TA00178"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-05-31T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000405",
+  "stationCode": "TA00396"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2018-11-30T00:00:00.000Z",
+  "startDate": "2018-11-01T00:00:00.000Z",
+  "sensorCode": "S000408",
+  "stationCode": "TA00399"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-05-31T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S000438",
+  "stationCode": "TA00438"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites and Atmos",
+  "endDate": "2019-02-28T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000478",
+  "stationCode": "TA00495"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites and wind direction sensor might be not working",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2018-08-01T00:00:00.000Z",
+  "sensorCode": "S000959",
+  "stationCode": "TA00582"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S000712",
+  "stationCode": "TA00049"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-01T00:00:00.000Z",
+  "startDate": "2020-02-01T00:00:00.000Z",
+  "sensorCode": "S000007",
+  "stationCode": "TA00001"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-05-12T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000734",
+  "stationCode": "TA00064"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000517",
+  "stationCode": "TA00551"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-06-30T00:00:00.000Z",
+  "startDate": "2020-02-01T00:00:00.000Z",
+  "sensorCode": "S000382",
+  "stationCode": "TA00373"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T00:00:00.000Z",
+  "startDate": "2019-04-01T00:00:00.000Z",
+  "sensorCode": "S000611",
+  "stationCode": "TA00036"
+},{
+  "description": "the atmos was clean but record high rainfall because of manufacturer problem which forced us to replace it.",
+  "endDate": "2020-10-05T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000483",
+  "stationCode": "TA00511"
+},{
+  "description": "The sensor looks clogged....now it is replaced",
+  "endDate": "2020-01-07T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001006",
+  "stationCode": "TA00224"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-05-31T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000504",
+  "stationCode": "TA00535"
+},{
+  "description": "The sensor record no data",
+  "endDate": "2020-04-16T00:00:00.000Z",
+  "startDate": "2019-11-18T00:00:00.000Z",
+  "sensorCode": "S001245",
+  "stationCode": "TA00657"
+},{
+  "description": "the logger was away for maintenance",
+  "startDate": "2020-05-27T00:00:00.000Z",
+  "endDate": "2020-05-28T13:30:00.000Z",
+  "sensorCode": "S001327",
+  "stationCode": "TA00273"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000383",
+  "stationCode": "TA00374"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000440",
+  "stationCode": "TA00439"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2018-12-31T00:00:00.000Z",
+  "startDate": "2018-06-01T00:00:00.000Z",
+  "sensorCode": "S000398",
+  "stationCode": "TA00389"
+},{
+  "description": "The sensor might be clogged",
+  "endDate": "2019-06-30T00:00:00.000Z",
+  "startDate": "2019-05-01T00:00:00.000Z",
+  "sensorCode": "S001155",
+  "stationCode": "TA00627"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-06-20T00:00:00.000Z",
+  "startDate": "2019-01-01T00:00:00.000Z",
+  "sensorCode": "S000432",
+  "stationCode": "TA00434"
+},{
+  "description": "The sensor looks to have manufacturing problem",
+  "endDate": "2020-05-22T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000219",
+  "stationCode": "TA00215"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-06-28T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000408",
+  "stationCode": "TA00399"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-04-20T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000440",
+  "stationCode": "TA00439"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-02-29T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001013",
+  "stationCode": "TA00271"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2020-11-06T00:00:00.000Z",
+  "startDate": "2019-08-01T00:00:00.000Z",
+  "sensorCode": "S000997",
+  "stationCode": "TA00209"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-05-20T23:55:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001003",
+  "stationCode": "TA00217"
+},{
+  "description": "The station is in Dar es Salaam for maintenance",
+  "endDate": "2020-06-01T00:00:00.000Z",
+  "startDate": "2020-05-17T00:00:00.000Z",
+  "sensorCode": "S000971",
+  "stationCode": "TA00589"
+},{
+  "description": "the station was offline",
+  "endDate": "2018-09-30T00:00:00.000Z",
+  "startDate": "2018-09-01T00:00:00.000Z",
+  "sensorCode": "S000411",
+  "stationCode": "TA00403"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-30T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000403",
+  "stationCode": "TA00394"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-12-31T23:55:00.000Z",
+  "startDate": "2018-12-01T00:00:00.000Z",
+  "sensorCode": "S000445",
+  "stationCode": "TA00445"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-11-30T00:00:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000128",
+  "stationCode": "TA00114"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-10-31T23:55:00.000Z",
+  "startDate": "2020-02-01T00:00:00.000Z",
+  "sensorCode": "S000326",
+  "stationCode": "TA00316"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-05-01T00:00:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S000427",
+  "stationCode": "TA00431"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-14T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000959",
+  "stationCode": "TA00582"
+},{
+  "description": "the sensor has been damaged",
+  "endDate": "2020-05-01T00:00:00.000Z",
+  "startDate": "2019-10-15T00:00:00.000Z",
+  "sensorCode": "S000928",
+  "stationCode": "TA00126"
+},{
+  "description": "the station is most of the time offline",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000995",
+  "stationCode": "TA00618"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-05-02T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S001182",
+  "stationCode": "TA00013"
+},{
+  "description": "the sensor was tested and failed to record rainfall and then replaced",
+  "endDate": "2020-10-08T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001019",
+  "stationCode": "TA00482"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-24T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001327",
+  "stationCode": "TA00273"
+},{
+  "description": "some water was added to check the consistency of the two rain gauges after cleaning",
+  "endDate": "2020-09-07T13:30:00.000Z",
+  "startDate": "2020-09-07T11:15:00.000Z",
+  "sensorCode": "S001393",
+  "stationCode": "TA00178"
+},{
+  "description": "the station was moved to a city for reparation",
+  "endDate": "2020-01-10T12:00:00.000Z",
+  "startDate": "2020-01-09T00:00:00.000Z",
+  "sensorCode": "S000333",
+  "stationCode": "TA00323"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-08-31T00:00:00.000Z",
+  "startDate": "2019-07-01T00:00:00.000Z",
+  "sensorCode": "S000734",
+  "stationCode": "TA00064"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2019-07-31T00:00:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000154",
+  "stationCode": "TA00147"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-08-18T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000424",
+  "stationCode": "TA00429"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-05-26T23:55:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001009",
+  "stationCode": "TA00229"
+},{
+  "description": "The sensor looks clogged and no consistency with the other rain gauge",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S001163",
+  "stationCode": "TA00630"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-11-04T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S001230",
+  "stationCode": "TA00654"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-04-08T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000244",
+  "stationCode": "TA00233"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-02-03T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S001012",
+  "stationCode": "TA00234"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000809",
+  "stationCode": "TA00077"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-01-11T00:00:00.000Z",
+  "startDate": "2020-05-01T00:00:00.000Z",
+  "sensorCode": "S001007",
+  "stationCode": "TA00226"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000768",
+  "stationCode": "TA00070"
+},{
+  "description": "it looks under-reported",
+  "endDate": "2020-05-31T23:55:00.000Z",
+  "startDate": "2019-12-01T00:00:00.000Z",
+  "sensorCode": "S000395",
+  "stationCode": "TA00386"
+},{
+  "description": "The sensor looks clogged and no consistency with the other rain gauge",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S001164",
+  "stationCode": "TA00630"
+},{
+  "description": "the sensor has a lot of data gaps due to battery issue which affects the total rainfall.",
+  "endDate": "2021-04-21T00:00:00.000Z",
+  "startDate": "2020-05-16T00:00:00.000Z",
+  "sensorCode": "S001001",
+  "stationCode": "TA00214"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-01-11T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000601",
+  "stationCode": "TA00034"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001192",
+  "stationCode": "TA00054"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-03-11T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S000442",
+  "stationCode": "TA00441"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-10-19T16:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000972",
+  "stationCode": "TA00590"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-02-03T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001345",
+  "stationCode": "TA00031"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-10-09T00:00:00.000Z",
+  "startDate": "2020-05-01T00:00:00.000Z",
+  "sensorCode": "S000606",
+  "stationCode": "TA00035"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-02-21T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S001393",
+  "stationCode": "TA00178"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000739",
+  "stationCode": "TA00066"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-08-31T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000150",
+  "stationCode": "TA00141"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S001359",
+  "stationCode": "TA00708"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-01-11T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S001009",
+  "stationCode": "TA00229"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000760",
+  "stationCode": "TA00069"
+},{
+  "description": "it looks under-reported",
+  "endDate": "2020-05-22T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000571",
+  "stationCode": "TA00028"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-09-07T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000804",
+  "stationCode": "TA00076"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-10-31T23:55:00.000Z",
+  "startDate": "2019-07-01T00:00:00.000Z",
+  "sensorCode": "S000264",
+  "stationCode": "TA00254"
+},{
+  "description": "it looks clogged",
+  "endDate": "2021-11-16T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000406",
+  "stationCode": "TA00397"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-05-31T00:00:00.000Z",
+  "startDate": "2020-02-01T00:00:00.000Z",
+  "sensorCode": "S000611",
+  "stationCode": "TA00036"
+},{
+  "description": "it looks under-reported",
+  "endDate": "2020-11-09T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S001348",
+  "stationCode": "TA00703"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-08-31T23:55:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000261",
+  "stationCode": "TA00251"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-05T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001005",
+  "stationCode": "TA00222"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-01T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000093",
+  "stationCode": "TA00021"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-12-12T23:55:00.000Z",
+  "startDate": "2019-06-01T00:00:00.000Z",
+  "sensorCode": "S000263",
+  "stationCode": "TA00253"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000775",
+  "stationCode": "TA00071"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-10T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S001098",
+  "stationCode": "TA00207"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-16T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000178",
+  "stationCode": "TA00171"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000181",
+  "stationCode": "TA00174"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S001338",
+  "stationCode": "TA00698"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-02-17T00:00:00.000Z",
+  "startDate": "2020-02-17T00:00:00.000Z",
+  "sensorCode": "S001356",
+  "stationCode": "TA00146"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-15T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S001356",
+  "stationCode": "TA00146"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-12T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S001340",
+  "stationCode": "TA00699"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-01-06T00:00:00.000Z",
+  "startDate": "2020-05-01T00:00:00.000Z",
+  "sensorCode": "S001360",
+  "stationCode": "TA00709"
+},{
+  "description": "the station has taken down and reinstalled at office for battery issue monitoring",
+  "endDate": "2020-10-09T00:00:00.000Z",
+  "startDate": "2020-10-01T04:00:00.000Z",
+  "sensorCode": "S000975",
+  "stationCode": "TA00593"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-09T23:55:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001228",
+  "stationCode": "TA00653"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-05T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S001214",
+  "stationCode": "TA00413"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000606",
+  "stationCode": "TA00035"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-03-31T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S001386",
+  "stationCode": "TA00215"
+},{
+  "description": "The sensor looks clogged and has been replaced today",
+  "endDate": "2021-02-02T00:00:00.000Z",
+  "startDate": "2020-06-03T00:00:00.000Z",
+  "sensorCode": "S001002",
+  "stationCode": "TA00216"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S000396",
+  "stationCode": "TA00387"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-09-30T23:55:00.000Z",
+  "startDate": "2019-07-01T00:00:00.000Z",
+  "sensorCode": "S000307",
+  "stationCode": "TA00293"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-09-30T23:55:00.000Z",
+  "startDate": "2018-07-01T00:00:00.000Z",
+  "sensorCode": "S000591",
+  "stationCode": "TA00032"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-12-31T23:55:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S000408",
+  "stationCode": "TA00399"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2018-04-30T23:55:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000442",
+  "stationCode": "TA00441"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-02-28T23:50:00.000Z",
+  "startDate": "2017-09-01T00:00:00.000Z",
+  "sensorCode": "S000589",
+  "stationCode": "TA00032"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-03-31T00:00:00.000Z",
+  "startDate": "2015-09-01T00:00:00.000Z",
+  "sensorCode": "S000669",
+  "stationCode": "TA00049"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-05-31T23:55:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001274",
+  "stationCode": "TA00672"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2018-08-22T23:55:00.000Z",
+  "startDate": "2018-05-01T00:00:00.000Z",
+  "sensorCode": "S000682",
+  "stationCode": "TA00052"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-05-31T23:55:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000704",
+  "stationCode": "TA00057"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-08T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000353",
+  "stationCode": "TA00343"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-06-30T23:55:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000722",
+  "stationCode": "TA00061"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-02-28T23:55:00.000Z",
+  "startDate": "2018-06-01T00:00:00.000Z",
+  "sensorCode": "S000219",
+  "stationCode": "TA00215"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-10T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S000214",
+  "stationCode": "TA00210"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000885",
+  "stationCode": "TA00096"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-10-31T23:55:00.000Z",
+  "startDate": "2017-08-30T00:00:00.000Z",
+  "sensorCode": "S000584",
+  "stationCode": "TA00031"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-12-31T23:55:00.000Z",
+  "startDate": "2017-08-01T00:00:00.000Z",
+  "sensorCode": "S000608",
+  "stationCode": "TA00036"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-06-30T23:55:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000421",
+  "stationCode": "TA00414"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-03-31T23:55:00.000Z",
+  "startDate": "2015-07-01T00:00:00.000Z",
+  "sensorCode": "S000657",
+  "stationCode": "TA00046"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2022-02-08T00:00:00.000Z",
+  "startDate": "2019-07-01T00:00:00.000Z",
+  "sensorCode": "S000389",
+  "stationCode": "TA00380"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-02-28T23:55:00.000Z",
+  "startDate": "2017-11-01T00:00:00.000Z",
+  "sensorCode": "S000614",
+  "stationCode": "TA00037"
+},{
+  "description": "record no precipitation data. the sensor looks clogged or has manufacturing problem",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2018-08-01T00:00:00.000Z",
+  "sensorCode": "S000458",
+  "stationCode": "TA00464"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-12-31T23:55:00.000Z",
+  "startDate": "2019-07-01T00:00:00.000Z",
+  "sensorCode": "S000228",
+  "stationCode": "TA00221"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-01-31T23:55:00.000Z",
+  "startDate": "2018-09-01T00:00:00.000Z",
+  "sensorCode": "S000443",
+  "stationCode": "TA00442"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-12T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000870",
+  "stationCode": "TA00093"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-11-01T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000338",
+  "stationCode": "TA00328"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-06-30T23:55:00.000Z",
+  "startDate": "2017-05-01T00:00:00.000Z",
+  "sensorCode": "S000574",
+  "stationCode": "TA00029"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-10-31T23:55:00.000Z",
+  "startDate": "2019-08-01T00:00:00.000Z",
+  "sensorCode": "S000354",
+  "stationCode": "TA00344"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-05-31T23:55:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000405",
+  "stationCode": "TA00396"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-01-31T23:55:00.000Z",
+  "startDate": "2018-10-01T00:00:00.000Z",
+  "sensorCode": "S000427",
+  "stationCode": "TA00431"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-10-31T23:55:00.000Z",
+  "startDate": "2019-05-01T00:00:00.000Z",
+  "sensorCode": "S000412",
+  "stationCode": "TA00404"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2018-07-25T23:55:00.000Z",
+  "startDate": "2017-01-01T00:00:00.000Z",
+  "sensorCode": "S000822",
+  "stationCode": "TA00080"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-09-30T23:55:00.000Z",
+  "startDate": "2019-09-01T00:00:00.000Z",
+  "sensorCode": "S000234",
+  "stationCode": "TA00226"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-05-31T23:55:00.000Z",
+  "startDate": "2019-05-01T00:00:00.000Z",
+  "sensorCode": "S000290",
+  "stationCode": "TA00276"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-10-31T23:55:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S000391",
+  "stationCode": "TA00382"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2016-12-31T23:55:00.000Z",
+  "startDate": "2015-06-01T00:00:00.000Z",
+  "sensorCode": "S000638",
+  "stationCode": "TA00042"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2021-04-30T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000436",
+  "stationCode": "TA00437"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-05-31T23:55:00.000Z",
+  "startDate": "2018-11-01T00:00:00.000Z",
+  "sensorCode": "S001192",
+  "stationCode": "TA00054"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-09-30T23:55:00.000Z",
+  "startDate": "2017-05-01T00:00:00.000Z",
+  "sensorCode": "S000878",
+  "stationCode": "TA00095"
+},{
+  "description": "it looks under-reported",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000180",
+  "stationCode": "TA00173"
+},{
+  "description": "Satellite comparison - later confirmed that the station was clogged",
+  "endDate": "2022-01-31T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000496",
+  "stationCode": "TA00527"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2021-08-20T00:00:00.000Z",
+  "startDate": "2019-05-01T00:00:00.000Z",
+  "sensorCode": "S000957",
+  "stationCode": "TA00580"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-10-31T23:55:00.000Z",
+  "startDate": "2019-07-01T00:00:00.000Z",
+  "sensorCode": "S000275",
+  "stationCode": "TA00266"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-06-30T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000291",
+  "stationCode": "TA00277"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-03-31T23:55:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000332",
+  "stationCode": "TA00322"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2018-07-05T23:55:00.000Z",
+  "startDate": "2017-03-01T00:00:00.000Z",
+  "sensorCode": "S000807",
+  "stationCode": "TA00077"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-07-31T00:00:00.000Z",
+  "startDate": "2019-04-01T00:00:00.000Z",
+  "sensorCode": "S000147",
+  "stationCode": "TA00136"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-04-30T00:00:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000563",
+  "stationCode": "TA00027"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-11-30T23:55:00.000Z",
+  "startDate": "2019-08-01T00:00:00.000Z",
+  "sensorCode": "S000314",
+  "stationCode": "TA00302"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-11-30T23:55:00.000Z",
+  "startDate": "2017-03-01T00:00:00.000Z",
+  "sensorCode": "S000594",
+  "stationCode": "TA00033"
+},{
+  "description": "Satellite comparison, ",
+  "endDate": "2020-05-31T23:55:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000421",
+  "stationCode": "TA00414"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-04-30T23:55:00.000Z",
+  "startDate": "2017-10-01T00:00:00.000Z",
+  "sensorCode": "S000652",
+  "stationCode": "TA00045"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-03-31T00:00:00.000Z",
+  "startDate": "2015-10-01T00:00:00.000Z",
+  "sensorCode": "S000673",
+  "stationCode": "TA00050"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2017-09-30T23:55:00.000Z",
+  "startDate": "2017-05-01T00:00:00.000Z",
+  "sensorCode": "S000858",
+  "stationCode": "TA00091"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-06-01T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000362",
+  "stationCode": "TA00614"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-04-30T23:55:00.000Z",
+  "startDate": "2019-02-01T00:00:00.000Z",
+  "sensorCode": "S000331",
+  "stationCode": "TA00321"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-10-31T23:55:00.000Z",
+  "startDate": "2019-10-01T00:00:00.000Z",
+  "sensorCode": "S000387",
+  "stationCode": "TA00378"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-03-22T00:00:00.000Z",
+  "startDate": "2017-07-01T00:00:00.000Z",
+  "sensorCode": "S000599",
+  "stationCode": "TA00034"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-04-30T23:55:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000423",
+  "stationCode": "TA00422"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-02-17T23:55:00.000Z",
+  "startDate": "2019-11-01T00:00:00.000Z",
+  "sensorCode": "S000978",
+  "stationCode": "TA00146"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-09-30T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000160",
+  "stationCode": "TA00153"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-04-30T23:55:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000163",
+  "stationCode": "TA00156"
+},{
+  "description": "it looks under-reported",
+  "endDate": "2020-04-30T00:00:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000088",
+  "stationCode": "TA00020"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-04-30T23:55:00.000Z",
+  "startDate": "2019-03-01T00:00:00.000Z",
+  "sensorCode": "S000157",
+  "stationCode": "TA00150"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-02-29T23:55:00.000Z",
+  "startDate": "2019-12-01T00:00:00.000Z",
+  "sensorCode": "S000977",
+  "stationCode": "TA00595"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-05-28T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S001667",
+  "stationCode": "TA00211"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-07-31T23:55:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S000305",
+  "stationCode": "TA00291"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2018-09-30T23:55:00.000Z",
+  "startDate": "2018-08-01T00:00:00.000Z",
+  "sensorCode": "S000424",
+  "stationCode": "TA00429"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-06-30T23:55:00.000Z",
+  "startDate": "2018-04-01T00:00:00.000Z",
+  "sensorCode": "S000734",
+  "stationCode": "TA00064"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2020-05-31T23:55:00.000Z",
+  "startDate": "2020-03-01T00:00:00.000Z",
+  "sensorCode": "S001330",
+  "stationCode": "TA00694"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-02-15T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000498",
+  "stationCode": "TA00529"
+},{
+  "description": "Satellite comparison",
+  "endDate": "2019-11-30T23:55:00.000Z",
+  "startDate": "2019-05-01T00:00:00.000Z",
+  "sensorCode": "S000293",
+  "stationCode": "TA00279"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2016-08-31T23:55:00.000Z",
+  "startDate": "2016-05-01T00:00:00.000Z",
+  "sensorCode": "S000661",
+  "stationCode": "TA00047"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-08-06T00:00:00.000Z",
+  "startDate": "2020-04-01T00:00:00.000Z",
+  "sensorCode": "S000307",
+  "stationCode": "TA00293"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-03-31T23:55:00.000Z",
+  "startDate": "2018-12-01T00:00:00.000Z",
+  "sensorCode": "S000571",
+  "stationCode": "TA00028"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2018-04-30T23:55:00.000Z",
+  "startDate": "2018-03-01T00:00:00.000Z",
+  "sensorCode": "S000643",
+  "stationCode": "TA00043"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2018-07-04T23:55:00.000Z",
+  "startDate": "2016-07-01T00:00:00.000Z",
+  "sensorCode": "S000812",
+  "stationCode": "TA00078"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2019-10-31T23:55:00.000Z",
+  "startDate": "2019-08-01T00:00:00.000Z",
+  "sensorCode": "S000156",
+  "stationCode": "TA00149"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000077",
+  "stationCode": "TA00018"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000445",
+  "stationCode": "TA00445"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001262",
+  "stationCode": "TA00314"
+},{
+  "description": "The station looks over-recording",
+  "endDate": "2021-01-16T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S001344",
+  "stationCode": "TA00166"
+},{
+  "description": "was clogged in these two months.",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S001182",
+  "stationCode": "TA00013"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S001183",
+  "stationCode": "TA00004"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-02-04T00:00:00.000Z",
+  "startDate": "2020-05-22T00:00:00.000Z",
+  "sensorCode": "S001385",
+  "stationCode": "TA00028"
+},{
+  "description": "it looks clogged",
+  "endDate": "2021-02-11T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S000768",
+  "stationCode": "TA00070"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2020-09-30T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S000855",
+  "stationCode": "TA00090"
+},{
+  "description": "the sensor is malfunctioning or affected by lightning.",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S001206",
+  "stationCode": "TA00643"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-25T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S001239",
+  "stationCode": "TA00046"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S001205",
+  "stationCode": "TA00047"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-03-23T00:00:00.000Z",
+  "startDate": "2020-12-01T00:00:00.000Z",
+  "sensorCode": "S001362",
+  "stationCode": "TA00110"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2020-12-15T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001189",
+  "stationCode": "TA00122"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-07-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000156",
+  "stationCode": "TA00149"
+},{
+  "description": "battery issue",
+  "endDate": "2021-03-12T00:00:00.000Z",
+  "startDate": "2020-05-01T00:00:00.000Z",
+  "sensorCode": "S000169",
+  "stationCode": "TA00162"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-11-01T00:00:00.000Z",
+  "sensorCode": "S000203",
+  "stationCode": "TA00200"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2021-08-31T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S001387",
+  "stationCode": "TA00225"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-08-31T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S001011",
+  "stationCode": "TA00231"
+},{
+  "description": "Very low monthly precipitation totals. the sensor might be clogged",
+  "endDate": "2021-04-08T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001096",
+  "stationCode": "TA00233"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-07-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000247",
+  "stationCode": "TA00237"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-10-15T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000248",
+  "stationCode": "TA00238"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-07-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000265",
+  "stationCode": "TA00255"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-09-30T00:00:00.000Z",
+  "startDate": "2020-08-01T00:00:00.000Z",
+  "sensorCode": "S000275",
+  "stationCode": "TA00266"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-11-01T00:00:00.000Z",
+  "sensorCode": "S000280",
+  "stationCode": "TA00270"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-03-03T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000283",
+  "stationCode": "TA00271"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-24T00:00:00.000Z",
+  "startDate": "2020-01-01T00:00:00.000Z",
+  "sensorCode": "S000287",
+  "stationCode": "TA00273"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites.",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S000299",
+  "stationCode": "TA00285"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-09-30T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000304",
+  "stationCode": "TA00290"
+},{
+  "description": "The sensor has problem and therefore replaced.",
+  "endDate": "2020-12-10T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S000314",
+  "stationCode": "TA00302"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-31T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S001379",
+  "stationCode": "TA00303"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000316",
+  "stationCode": "TA00304"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000346",
+  "stationCode": "TA00336"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S000358",
+  "stationCode": "TA00348"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000359",
+  "stationCode": "TA00349"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-02-28T00:00:00.000Z",
+  "startDate": "2020-11-01T00:00:00.000Z",
+  "sensorCode": "S001299",
+  "stationCode": "TA00372"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000415",
+  "stationCode": "TA00407"
+},{
+  "description": "it looks over-reported",
+  "endDate": "2020-09-30T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S000422",
+  "stationCode": "TA00416"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-04-23T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000427",
+  "stationCode": "TA00431"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-01-15T00:00:00.000Z",
+  "startDate": "2020-11-01T00:00:00.000Z",
+  "sensorCode": "S000430",
+  "stationCode": "TA00433"
+},{
+  "description": "it looks under-reported, could be also because of battery",
+  "endDate": "2021-02-10T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000434",
+  "stationCode": "TA00435"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-04-26T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S000438",
+  "stationCode": "TA00438"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-12-19T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000451",
+  "stationCode": "TA00454"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-09-30T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000452",
+  "stationCode": "TA00457"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-08-25T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000453",
+  "stationCode": "TA00458"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites - it was clogged.",
+  "endDate": "2021-11-16T00:00:00.000Z",
+  "startDate": "2020-05-01T00:00:00.000Z",
+  "sensorCode": "S000455",
+  "stationCode": "TA00460"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S000467",
+  "stationCode": "TA00480"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2021-06-08T00:00:00.000Z",
+  "startDate": "2020-07-01T00:00:00.000Z",
+  "sensorCode": "S000833",
+  "stationCode": "TA00487"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites and ECRN",
+  "endDate": "2021-03-03T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000473",
+  "stationCode": "TA00493"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-02-26T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000475",
+  "stationCode": "TA00494"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2021-02-26T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S000476",
+  "stationCode": "TA00494"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S001297",
+  "stationCode": "TA00508"
+},{
+  "description": "Very low monthly precipitation totals. could be also because of batteries.",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000494",
+  "stationCode": "TA00525"
+},{
+  "description": "The sensor looks clogged. it is now deactivated at this site and moved to another site.",
+  "endDate": "2021-10-08T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S000991",
+  "stationCode": "TA00617"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001173",
+  "stationCode": "TA00633"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-12-11T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S001249",
+  "stationCode": "TA00658"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2020-10-31T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S001266",
+  "stationCode": "TA00665"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2020-11-30T00:00:00.000Z",
+  "startDate": "2020-09-01T00:00:00.000Z",
+  "sensorCode": "S001271",
+  "stationCode": "TA00669"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2001-02-16T00:00:00.000Z",
+  "startDate": "2020-06-01T00:00:00.000Z",
+  "sensorCode": "S001321",
+  "stationCode": "TA00689"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-07-31T00:00:00.000Z",
+  "startDate": "2020-05-01T00:00:00.000Z",
+  "sensorCode": "S001329",
+  "stationCode": "TA00693"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-05-06T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000484",
+  "stationCode": "TA00511"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-06-30T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S000128",
+  "stationCode": "TA00114"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-04-24T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000129",
+  "stationCode": "TA00115"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2022-09-01T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000205",
+  "stationCode": "TA00202"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-05-07T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S001003",
+  "stationCode": "TA00217"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-02-28T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S000253",
+  "stationCode": "TA00243"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-05-16T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S000285",
+  "stationCode": "TA00272"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-04-30T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001232",
+  "stationCode": "TA00395"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-05-31T23:55:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000372",
+  "stationCode": "TA00363"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-04-30T23:55:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000378",
+  "stationCode": "TA00369"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-08-21T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S000422",
+  "stationCode": "TA00416"
+},{
+  "description": "After comparison with the satellites' data the sensor looks clogged.",
+  "endDate": "2021-08-01T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S000443",
+  "stationCode": "TA00442"
+},{
+  "description": "Very low monthly precipitation totals comparing to the satellites",
+  "endDate": "2021-03-31T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000504",
+  "stationCode": "TA00535"
+},{
+  "description": "Very low monthly precipitation totals comparing to the satellites",
+  "endDate": "2021-03-31T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000511",
+  "stationCode": "TA00543"
+},{
+  "description": "Very low monthly precipitation totals comparing to the satellites",
+  "endDate": "2021-03-31T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000515",
+  "stationCode": "TA00549"
+},{
+  "description": "Very low monthly precipitation totals comparing to the satellites",
+  "endDate": "2021-04-30T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000973",
+  "stationCode": "TA00591"
+},{
+  "description": "Very low monthly precipitation totals comparing to the satellites",
+  "endDate": "2021-04-30T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S000974",
+  "stationCode": "TA00592"
+},{
+  "description": "Very low monthly precipitation totals comparing to the satellites",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000976",
+  "stationCode": "TA00594"
+},{
+  "description": "Very low monthly precipitation totals comparing to the satellites",
+  "endDate": "2022-04-30T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000977",
+  "stationCode": "TA00595"
+},{
+  "description": "Very high monthly precipitation totals comparing to the satellites",
+  "endDate": "2021-09-17T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001178",
+  "stationCode": "TA00636"
+},{
+  "description": "no precipitation data since its installation.",
+  "endDate": "2021-05-24T00:00:00.000Z",
+  "startDate": "2021-02-08T00:00:00.000Z",
+  "sensorCode": "S000228",
+  "stationCode": "TA00650"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001258",
+  "stationCode": "TA00663"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-06-30T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S001259",
+  "stationCode": "TA00664"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-06-21T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001272",
+  "stationCode": "TA00670"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-04-30T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001273",
+  "stationCode": "TA00671"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-04-23T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001274",
+  "stationCode": "TA00672"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-06-30T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S001369",
+  "stationCode": "TA00713"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-05-11T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001356",
+  "stationCode": "TA00146"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000276",
+  "stationCode": "TA00267"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-01-31T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001399",
+  "stationCode": "TA00111"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-06-10T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000135",
+  "stationCode": "TA00121"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001235",
+  "stationCode": "TA00009"
+},{
+  "description": "The sensor looks clogged     -   It has been then replaced",
+  "endDate": "2022-02-16T00:00:00.000Z",
+  "startDate": "2021-04-01T00:00:00.000Z",
+  "sensorCode": "S001410",
+  "stationCode": "TA00012"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-04-22T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000093",
+  "stationCode": "TA00021"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000775",
+  "stationCode": "TA00071"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000131",
+  "stationCode": "TA00117"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-06-11T00:00:00.000Z",
+  "startDate": "2021-02-01T00:00:00.000Z",
+  "sensorCode": "S001377",
+  "stationCode": "TA00119"
+},{
+  "description": "it looks under-reported",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000160",
+  "stationCode": "TA00153"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S001393",
+  "stationCode": "TA00178"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-11-13T00:00:00.000Z",
+  "startDate": "2021-04-01T00:00:00.000Z",
+  "sensorCode": "S000246",
+  "stationCode": "TA00236"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000250",
+  "stationCode": "TA00240"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000275",
+  "stationCode": "TA00266"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000289",
+  "stationCode": "TA00275"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-05-31T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S001309",
+  "stationCode": "TA00259"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-17T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001330",
+  "stationCode": "TA00694"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2022-04-21T00:00:00.000Z",
+  "startDate": "2021-04-01T00:00:00.000Z",
+  "sensorCode": "S000347",
+  "stationCode": "TA00337"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-06-30T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000400",
+  "stationCode": "TA00391"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-07-31T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000408",
+  "stationCode": "TA00399"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites and was reported some clogging",
+  "endDate": "2021-04-30T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S001098",
+  "stationCode": "TA00207"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-11-12T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S000441",
+  "stationCode": "TA00440"
+},{
+  "description": "two months has very high monthly precipitation totals comparing to satellites",
+  "endDate": "2022-06-03T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001175",
+  "stationCode": "TA00635"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-09-30T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S001222",
+  "stationCode": "TA00649"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-07-29T00:00:00.000Z",
+  "startDate": "2020-10-01T00:00:00.000Z",
+  "sensorCode": "S001365",
+  "stationCode": "TA00711"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-07-16T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S001328",
+  "stationCode": "TA00692"
+},{
+  "description": "some water was added for testing",
+  "endDate": "2021-08-07T10:55:00.000Z",
+  "startDate": "2021-08-07T09:00:00.000Z",
+  "sensorCode": "S000226",
+  "stationCode": "TA00220"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-07-31T00:00:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S000139",
+  "stationCode": "TA00393"
+},{
+  "description": "Very high monthly precipitation ",
+  "endDate": "2021-08-28T00:00:00.000Z",
+  "startDate": "2021-06-21T00:00:00.000Z",
+  "sensorCode": "S001362",
+  "stationCode": "TA00011"
+},{
+  "description": "The sensor looks malfunctioning. ",
+  "endDate": "2021-10-03T00:00:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S000473",
+  "stationCode": "TA00493"
+},{
+  "description": "it looks under-reported. probably it is clogged",
+  "endDate": "2022-04-21T00:00:00.000Z",
+  "startDate": "2021-04-01T00:00:00.000Z",
+  "sensorCode": "S000326",
+  "stationCode": "TA00316"
+},{
+  "description": "it looks under-reported, found to have some dust.",
+  "endDate": "2021-09-21T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000174",
+  "stationCode": "TA00167"
+},{
+  "description": "very high amount of precipitation comparing to the satellites",
+  "endDate": "2021-12-31T00:00:00.000Z",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "sensorCode": "S001217",
+  "stationCode": "TA00172"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-10-13T00:00:00.000Z",
+  "startDate": "2021-09-01T00:00:00.000Z",
+  "sensorCode": "S000184",
+  "stationCode": "TA00179"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-01-07T00:00:00.000Z",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "sensorCode": "S001298",
+  "stationCode": "TA00372"
+},{
+  "description": "it looks over-reporting",
+  "endDate": "2021-11-15T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S001346",
+  "stationCode": "TA00019"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S000983",
+  "stationCode": "TA00083"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S000850",
+  "stationCode": "TA00089"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-11T00:00:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S000855",
+  "stationCode": "TA00090"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-11T00:00:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S000860",
+  "stationCode": "TA00091"
+},{
+  "description": "it looks under-reporting",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000900",
+  "stationCode": "TA00102"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-10-13T00:00:00.000Z",
+  "startDate": "2021-09-01T00:00:00.000Z",
+  "sensorCode": "S001296",
+  "stationCode": "TA00179"
+},{
+  "description": "during the maintenance looks like they add some water.",
+  "endDate": "2021-06-28T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000189",
+  "stationCode": "TA00184"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-11-08T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000312",
+  "stationCode": "TA00300"
+},{
+  "description": "The sensor was clogged",
+  "endDate": "2021-09-25T23:55:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S000209",
+  "stationCode": "TA00205"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "sensorCode": "S001000",
+  "stationCode": "TA00213"
+},{
+  "description": "the sensors have no consistency among them. I however after looking to the satellite data think the ECRN-100 is wrong ",
+  "endDate": "2022-05-18T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000227",
+  "stationCode": "TA00220"
+},{
+  "description": "The sensor looks clogged or may be malfunctioning. ",
+  "endDate": "2022-06-15T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000237",
+  "stationCode": "TA00228"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-11-05T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000239",
+  "stationCode": "TA00229"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000244",
+  "stationCode": "TA00233"
+},{
+  "description": "it looks under-reporting",
+  "endDate": "2021-11-14T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S000247",
+  "stationCode": "TA00237"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-11-13T00:00:00.000Z",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "sensorCode": "S001522",
+  "stationCode": "TA00239"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-08-31T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000304",
+  "stationCode": "TA00290"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S000308",
+  "stationCode": "TA00294"
+},{
+  "description": "it is looks under-reported. probably it is clogged.",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S001400",
+  "stationCode": "TA00315"
+},{
+  "description": "it is looks under-reported. probably it is clogged.",
+  "endDate": "2021-11-15T00:00:00.000Z",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "sensorCode": "S000327",
+  "stationCode": "TA00317"
+},{
+  "description": "it is looks under-reported. probably it is clogged.",
+  "endDate": "2022-02-12T00:00:00.000Z",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "sensorCode": "S000344",
+  "stationCode": "TA00334"
+},{
+  "description": "it is looks under-reported. probably it is clogged.",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000346",
+  "stationCode": "TA00336"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-04-18T00:00:00.000Z",
+  "startDate": "2021-03-01T00:00:00.000Z",
+  "sensorCode": "S000348",
+  "stationCode": "TA00338"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-09T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000354",
+  "stationCode": "TA00344"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-09T00:00:00.000Z",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "sensorCode": "S000357",
+  "stationCode": "TA00347"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-03-07T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S000359",
+  "stationCode": "TA00349"
+},{
+  "description": "The station looks over-recording",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "startDate": "2021-09-01T00:00:00.000Z",
+  "sensorCode": "S001429",
+  "stationCode": "TA00364"
+},{
+  "description": "it is looks under-reported",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000375",
+  "stationCode": "TA00366"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-12-31T00:00:00.000Z",
+  "startDate": "2021-09-01T00:00:00.000Z",
+  "sensorCode": "S000382",
+  "stationCode": "TA00373"
+},{
+  "description": "it is looks under-reported",
+  "endDate": "2021-07-31T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S000397",
+  "stationCode": "TA00388"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-11-12T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000398",
+  "stationCode": "TA00389"
+},{
+  "description": "it looks under-reported comparing to the satellites",
+  "endDate": "2021-09-30T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000413",
+  "stationCode": "TA00405"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-08-31T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S000466",
+  "stationCode": "TA00473"
+},{
+  "description": "Very high monthly precipitation totals comparing to satellites",
+  "endDate": "2021-10-29T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000476",
+  "stationCode": "TA00494"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2022-02-05T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S001421",
+  "stationCode": "TA00511"
+},{
+  "description": "The sensor looks clogged_ comparing to the satellites",
+  "endDate": "2022-01-26T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000494",
+  "stationCode": "TA00525"
+},{
+  "description": "The sensor looks clogged",
+  "endDate": "2021-09-30T00:00:00.000Z",
+  "startDate": "2021-04-01T00:00:00.000Z",
+  "sensorCode": "S000497",
+  "stationCode": "TA00528"
+},{
+  "description": "Very low monthly precipitation totals.",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "sensorCode": "S000513",
+  "stationCode": "TA00547"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2022-04-30T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S000973",
+  "stationCode": "TA00591"
+},{
+  "description": "it looks clogged",
+  "endDate": "2021-11-03T00:00:00.000Z",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "sensorCode": "S001228",
+  "stationCode": "TA00653"
+},{
+  "description": "Very low monthly precipitation totals comparing to satellites",
+  "endDate": "2021-02-28T00:00:00.000Z",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "sensorCode": "S001343",
+  "stationCode": "TA00701"
+},{
+  "stationCode": "TA00435",
+  "sensorCode": "S001548",
+  "startDate": "2021-10-21T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "the station is down and is inside a house by now"
+},{
+  "stationCode": "TA00665",
+  "sensorCode": "S001266",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "endDate": "2021-12-21T00:00:00.000Z",
+  "description": "it looks under-reported"
+},{
+  "stationCode": "TA00666",
+  "sensorCode": "S001267",
+  "startDate": "2021-04-01T00:00:00.000Z",
+  "endDate": "2021-12-21T00:00:00.000Z",
+  "description": "it looks under-reported"
+},{
+  "stationCode": "TA00684",
+  "sensorCode": "S001302",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "description": "it looks under-reported compared to the satellites."
+},{
+  "stationCode": "TA00686",
+  "sensorCode": "S001304",
+  "startDate": "2021-05-01T00:00:00.000Z",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "description": "it looks under-reported comparing to the satellites"
+},{
+  "stationCode": "TA00687",
+  "sensorCode": "S001305",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "endDate": "2022-05-31T00:00:00.000Z",
+  "description": "it looks under-reported comparing to the satellites"
+},{
+  "stationCode": "TA00695",
+  "sensorCode": "S001333",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "endDate": "2022-02-28T00:00:00.000Z",
+  "description": "it looks under-reported comparing to the satellites"
+},{
+  "stationCode": "TA00702",
+  "sensorCode": "S001347",
+  "startDate": "2021-06-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "it looks under-reported comparing to the satellites"
+},{
+  "stationCode": "TA00714",
+  "sensorCode": "S001372",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "endDate": "2021-11-19T00:00:00.000Z",
+  "description": "The sensor looks clogged"
+},{
+  "stationCode": "TA00723",
+  "sensorCode": "S001407",
+  "startDate": "2021-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "it looks under-reported comparing to the satellites"
+},{
+  "stationCode": "TA00282",
+  "sensorCode": "S000296",
+  "startDate": "2021-11-03T00:00:00.000Z",
+  "endDate": "2021-11-09T23:55:00.000Z",
+  "description": "the station was down for maintenance"
+},{
+  "stationCode": "TA00214",
+  "sensorCode": "S001001",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "endDate": "2021-11-18T00:00:00.000Z",
+  "description": "it looks under-reported"
+},{
+  "stationCode": "TA00004",
+  "sensorCode": "S001183",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00009",
+  "sensorCode": "S001235",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2021-11-30T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00037",
+  "sensorCode": "S000616",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "endDate": "2022-02-28T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites - confirmed. it was clogged"
+},{
+  "stationCode": "TA00065",
+  "sensorCode": "S001202",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2021-11-30T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00095",
+  "sensorCode": "S000880",
+  "startDate": "2021-01-01T00:00:00.000Z",
+  "endDate": "2022-02-12T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00125",
+  "sensorCode": "S001434",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-02-04T23:55:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00114",
+  "sensorCode": "S000128",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "endDate": "2021-10-31T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00270",
+  "sensorCode": "S000281",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-02-16T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00372",
+  "sensorCode": "S001299",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-10-21T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00441",
+  "sensorCode": "S001555",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-05-31T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00655",
+  "sensorCode": "S001240",
+  "startDate": "2021-07-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00393",
+  "sensorCode": "S000139",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2022-02-14T00:00:00.000Z",
+  "description": "after sattelite comparison, a technician has visited it and was found clogged"
+},{
+  "stationCode": "TA00049",
+  "sensorCode": "S001381",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-02-11T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites - confirmed. it was clogged"
+},{
+  "stationCode": "TA00227",
+  "sensorCode": "S001008",
+  "startDate": "2021-09-01T00:00:00.000Z",
+  "endDate": "2022-02-18T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites - confirmed. it was clogged"
+},{
+  "stationCode": "TA00590",
+  "sensorCode": "S000972",
+  "startDate": "2021-08-01T00:00:00.000Z",
+  "endDate": "2022-02-28T23:55:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites - confirmed. it was clogged"
+},{
+  "stationCode": "TA00178",
+  "sensorCode": "S000953",
+  "startDate": "2022-04-21T12:00:00.000Z",
+  "endDate": "2022-04-20T16:00:00.000Z",
+  "description": "Test the rain gauge with some water"
+},{
+  "stationCode": "TA00178",
+  "sensorCode": "S001393",
+  "startDate": "2022-04-20T12:00:00.000Z",
+  "endDate": "2022-04-20T16:00:00.000Z",
+  "description": "Test the rain gauge with some water"
+},{
+  "stationCode": "TA00316",
+  "sensorCode": "S000326",
+  "startDate": "2022-04-21T10:00:00.000Z",
+  "endDate": "2022-04-21T12:00:00.000Z",
+  "description": "water has added for test purposes"
+},{
+  "stationCode": "TA00033",
+  "sensorCode": "S000596",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-05-31T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00034",
+  "sensorCode": "S001532",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-07-25T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00065",
+  "sensorCode": "S001202",
+  "startDate": "2022-02-01T00:00:00.000Z",
+  "endDate": "2022-04-07T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00070",
+  "sensorCode": "S000767",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "No consistency among both the atmos and the ECRN and also they have no consistency with the satellite data"
+},{
+  "stationCode": "TA00070",
+  "sensorCode": "S000768",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "No consistency among both the atmos and the ECRN and also they have no consistency with the satellite data"
+},{
+  "stationCode": "TA00146",
+  "sensorCode": "S001356",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-04-22T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00153",
+  "sensorCode": "S000160",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2021-12-31T00:00:00.000Z",
+  "description": "the stations looks clogged"
+},{
+  "stationCode": "TA00180",
+  "sensorCode": "S001172",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00187",
+  "sensorCode": "S000192",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2021-11-30T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00365",
+  "sensorCode": "S000374",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2021-11-30T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00369",
+  "sensorCode": "S000378",
+  "startDate": "2022-02-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00374",
+  "sensorCode": "S000383",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2022-04-30T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00379",
+  "sensorCode": "S000388",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-01-31T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00394",
+  "sensorCode": "S000443",
+  "startDate": "2021-11-13T00:00:00.000Z",
+  "endDate": "2022-04-12T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites, looks damaged."
+},{
+  "stationCode": "TA00404",
+  "sensorCode": "S000412",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2021-11-30T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00445",
+  "sensorCode": "S000445",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-11-04T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00470",
+  "sensorCode": "S000464",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2022-10-21T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00493",
+  "sensorCode": "S001013",
+  "startDate": "2021-10-03T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00495",
+  "sensorCode": "S000477",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-05-22T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00535",
+  "sensorCode": "S000504",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2022-02-28T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00549",
+  "sensorCode": "S000515",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00608",
+  "sensorCode": "S001579",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00666",
+  "sensorCode": "S001267",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2022-04-30T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00701",
+  "sensorCode": "S001343",
+  "startDate": "2021-11-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00743",
+  "sensorCode": "S001487",
+  "startDate": "2021-10-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00003",
+  "sensorCode": "S000017",
+  "startDate": "2022-06-03T14:00:00.000Z",
+  "endDate": "2022-06-03T20:55:00.000Z",
+  "description": "Test the rain gauge with some water"
+},{
+  "stationCode": "TA00003",
+  "sensorCode": "S000017",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2022-05-31T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites - confirmed. it was clogged, and also very low comparing to the neighboring stations sr"
+},{
+  "stationCode": "TA00007",
+  "sensorCode": "S001233",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2022-07-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites - confirmed. it was clogged"
+},{
+  "stationCode": "TA00013",
+  "sensorCode": "S001182",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2022-08-15T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites - confirmed. it was clogged"
+},{
+  "stationCode": "TA00098",
+  "sensorCode": "S001211",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2022-04-30T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00170",
+  "sensorCode": "S001278",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2022-05-31T23:55:00.000Z",
+  "description": "looks completely clogged"
+},{
+  "stationCode": "TA00178",
+  "sensorCode": "S001393",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites and the atmos"
+},{
+  "stationCode": "TA00190",
+  "sensorCode": "S000195",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2022-05-31T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00201",
+  "sensorCode": "S000204",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00214",
+  "sensorCode": "S001001",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2022-11-06T23:55:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00217",
+  "sensorCode": "S001003",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites and the ECRN-100"
+},{
+  "stationCode": "TA00220",
+  "sensorCode": "S000227",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the Atmos and the satellites"
+},{
+  "stationCode": "TA00255",
+  "sensorCode": "S000265",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00259",
+  "sensorCode": "S000269",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00266",
+  "sensorCode": "S000275",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00267",
+  "sensorCode": "S000276",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00316",
+  "sensorCode": "S000326",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-04-30T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00509",
+  "sensorCode": "S000481",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00511",
+  "sensorCode": "S000484",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-11-22T23:55:00.000Z",
+  "description": "very low amount of precipitation comparing to the atmos and the satellites"
+},{
+  "stationCode": "TA00581",
+  "sensorCode": "S000958",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00660",
+  "sensorCode": "S001254",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00680",
+  "sensorCode": "S001295",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00685",
+  "sensorCode": "S001303",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2022-10-20T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00699",
+  "sensorCode": "S001340",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-05-31T00:00:00.000Z",
+  "description": "very little amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00711",
+  "sensorCode": "S001581",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very little amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00713",
+  "sensorCode": "S001369",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-03-31T00:00:00.000Z",
+  "description": "very high amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00720",
+  "sensorCode": "S001398",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2022-11-09T00:00:00.000Z",
+  "description": "very little amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00721",
+  "sensorCode": "S001403",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00682",
+  "sensorCode": "S001300",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2022-08-31T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00111",
+  "sensorCode": "S001714",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2022-09-10T00:00:00.000Z",
+  "description": "very little amount of precipitation comparing to the satellites and it is confirmed that the station was clogged"
+},{
+  "stationCode": "TA00108",
+  "sensorCode": "S000122",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2022-04-30T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00114",
+  "sensorCode": "S001713",
+  "startDate": "2022-05-27T00:00:00.000Z",
+  "endDate": "2022-09-11T00:00:00.000Z",
+  "description": "The station was moved to another location for maintenance"
+},{
+  "stationCode": "TA00209",
+  "sensorCode": "S001436",
+  "startDate": "2022-01-01T00:00:00.000Z",
+  "endDate": "2022-05-31T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00010",
+  "sensorCode": "S001234",
+  "startDate": "2022-06-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00230",
+  "sensorCode": "S001010",
+  "startDate": "2022-07-01T00:00:00.000Z",
+  "endDate": "2022-11-18T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00693",
+  "sensorCode": "S001329",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00395",
+  "sensorCode": "S001232",
+  "startDate": "2022-04-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00062",
+  "sensorCode": "S001553",
+  "startDate": "2022-07-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00063",
+  "sensorCode": "S001435",
+  "startDate": "2022-05-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00077",
+  "sensorCode": "S000809",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00091",
+  "sensorCode": "S001719",
+  "startDate": "2022-06-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00349",
+  "sensorCode": "S000359",
+  "startDate": "2022-06-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00046",
+  "sensorCode": "S001524",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00268",
+  "sensorCode": "S001260",
+  "startDate": "2022-05-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00441",
+  "sensorCode": "S001555",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00446",
+  "sensorCode": "S000446",
+  "startDate": "2022-03-01T00:00:00.000Z",
+  "endDate": "2022-11-22T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00315",
+  "sensorCode": "S001400",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00034",
+  "sensorCode": "S001532",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2022-11-18T00:00:00.000Z",
+  "description": "very low amount of precipitation comparing to the satellites"
+},{
+  "stationCode": "TA00459",
+  "sensorCode": "S000454",
+  "startDate": "2022-05-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00614",
+  "sensorCode": "S000362",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00439",
+  "sensorCode": "S001561",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00433",
+  "sensorCode": "S001536",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": ""
+},{
+  "stationCode": "TA00431",
+  "sensorCode": "S000427",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00648",
+  "sensorCode": "S001220",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2022-11-06T23:55:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00698",
+  "sensorCode": "S001338",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00659",
+  "sensorCode": "S001251",
+  "startDate": "2022-06-01T00:00:00.000Z",
+  "endDate": "2022-08-31T00:00:00.000Z",
+  "description": "Too much rainfall compared to satellite"
+},{
+  "stationCode": "TA00653",
+  "sensorCode": "S001228",
+  "startDate": "2022-07-01T00:00:00.000Z",
+  "endDate": "2022-11-28T23:55:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00704",
+  "sensorCode": "S001587",
+  "startDate": "2000-01-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00705",
+  "sensorCode": "S001710",
+  "startDate": "2022-05-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00707",
+  "sensorCode": "S001358",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2022-09-30T23:55:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00725",
+  "sensorCode": "S001724",
+  "startDate": "2022-10-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00745",
+  "sensorCode": "S001538",
+  "startDate": "2022-06-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00749",
+  "sensorCode": "S001562",
+  "startDate": "2022-07-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00269",
+  "sensorCode": "S000279",
+  "startDate": "2022-05-01T00:00:00.000Z",
+  "endDate": "2022-11-16T23:55:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00269",
+  "sensorCode": "S001525",
+  "startDate": "2022-05-01T00:00:00.000Z",
+  "endDate": "2022-11-16T23:55:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00726",
+  "sensorCode": "S001411",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00658",
+  "sensorCode": "S001249",
+  "startDate": "2022-07-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00665",
+  "sensorCode": "S001266",
+  "startDate": "2022-06-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00692",
+  "sensorCode": "S001328",
+  "startDate": "2022-07-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00399",
+  "sensorCode": "S000408",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00399",
+  "sensorCode": "S000408",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00316",
+  "sensorCode": "S000326",
+  "startDate": "2022-08-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00429",
+  "sensorCode": "S000424",
+  "startDate": "2022-09-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00458",
+  "sensorCode": "S000453",
+  "startDate": "2022-05-01T00:00:00.000Z",
+  "endDate": "2199-01-01T00:00:00.000Z",
+  "description": "The ATMOS funnel could be blocked"
+},{
+  "stationCode": "TA00787",
+  "sensorCode": "S001833",
+  "startDate": "2022-06-12T00:00:00.000Z",
+  "endDate": "2022-11-27T23:55:00.000Z",
+  "description": "The sensor was clogged"
+}]
