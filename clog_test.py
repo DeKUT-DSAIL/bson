@@ -85,8 +85,32 @@ def __splitDateRange(inputStartDate, inputEndDate):
     df.loc[0, 'start'] = pd.Timestamp(startDate)
     df['end'].iloc[-1] = pd.Timestamp(endDate)
     return df
+
+# Aggregate per day
+def aggregate_with_flags(csv_file):
+    df = pd.read_csv(csv_file)
+    df.rename(columns = {'Unnamed: 0':'Date'}, inplace = True)
+    df.Date = df.Date.astype('datetime64')
+    df2 = df.copy()
+    # Adding the daily rainfall
+    df = df.groupby(pd.Grouper(key='Date', axis=0, 
+                      freq='1D')).sum()
+    df2 = df2.groupby(pd.Grouper(key='Date', axis=0, 
+                      freq='1D')).mean()
+
+# Pure aggregates
+def aggregate_variables(dataframe):
+    dataframe = dataframe.reset_index()
+    dataframe.rename(columns = {'index':'Date'}, inplace = True)
+    return dataframe.groupby(pd.Grouper(key='Date', axis=0, 
+                      freq='1D')).sum()
+
+
+
+
         
-def getMeasurements(station, startDate=None, endDate=None, variables=None, dataset='controlled'):
+# Get both the rainfall and the precipitation
+def getMeasurements_and_Flags(station, startDate=None, endDate=None, variables=None, dataset='controlled'):
     endpoints = f'services/measurements/v2/stations/{station}/measurements/{dataset}'
     datesplit = __splitDateRange(startDate, endDate)
     series = []
@@ -228,45 +252,167 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
 
     return df
 
+# Get the variables only
+def getMeasurements(station, startDate=None, endDate=None, variables=None, dataset='controlled'):
+        #print('Get measurements', station, startDate, endDate, variables)
+        endpoint = 'services/measurements/v2/stations/%s/measurements/%s' % (station, dataset)
 
-        
+        dateSplit = __splitDateRange(startDate, endDate)
+        series = []
+        seriesHolder = {}
+
+        for index, row in dateSplit.iterrows():
+            params = {'start': row['start'].strftime('%Y-%m-%dT%H:%M:%SZ'), 'end': row['end'].strftime('%Y-%m-%dT%H:%M:%SZ')}
+            if variables and isinstance(variables, list) and len(variables) == 1:
+                params['variable'] = variables[0]
+            response = __request(endpoint, params)
+            if 'results' in response and len(response['results']) >= 1 and 'series' in response['results'][0] and len(
+                response['results'][0]['series']) >= 1 and 'values' in response['results'][0]['series'][0]:
+
+                for result in response['results']:
+                    if 'series' in result and len(result['series']) >= 1 and 'values' in result['series'][0]:
+                        for serie in result['series']:
+
+                            columns = serie['columns']
+                            observations = serie['values']
+
+                            time_index = columns.index('time')
+                            quality_index = columns.index('quality')
+                            variable_index = columns.index('variable')
+                            sensor_index = columns.index('sensor')
+                            value_index = columns.index('value')
+
+                            # Create list of unique variables within the retrieved observations.
+                            if not isinstance(variables, list) or len(variables) == 0:
+                                shortcodes = list(set(list(map(lambda x: x[variable_index], observations))))
+                            else:
+                                shortcodes = variables
+
+                            for shortcode in shortcodes:
+
+                                # Create list of timeserie elements for this variable with predefined format [time, value, sensor, quality].
+                                timeserie = list(map(lambda x: [x[time_index], x[value_index] if x[quality_index] == 1 else np.nan, x[sensor_index], x[quality_index]],
+                                                     list(filter(lambda x: x[variable_index] == shortcode, observations))))
+
+                                if shortcode in seriesHolder:
+                                    seriesHolder[shortcode] = seriesHolder[shortcode] + timeserie
+                                else:
+                                    seriesHolder[shortcode] = timeserie
+
+                                # Clean up scope.
+                                del timeserie
+
+                            # Clean up scope.
+                            del columns
+                            del observations
+                            del shortcodes
+
+                # Clean up scope and free memory.
+                del response
+                gc.collect()
+
+        for shortcode in seriesHolder:
+            # Check if there are duplicate entries in this timeseries (multiple sensors for same variable).
+            timestamps = list(map(lambda x: x[0], seriesHolder[shortcode]))
+
+            if len(timestamps) > len(set(timestamps)):
+                # Split observations per sensor.
+                print('Split observations for %s per sensor' % shortcode)
+                sensors = list(set(list(map(lambda x: x[2], seriesHolder[shortcode]))))
+                for sensor in sensors:
+                    sensorSerie = list(filter(lambda x: x[2] == sensor, seriesHolder[shortcode]))
+                    timestamps = list(map(lambda x: pd.Timestamp(x[0]), sensorSerie))
+                    values = list(map(lambda x: x[1], sensorSerie))
+                    serie = pd.Series(values, index=pd.DatetimeIndex(timestamps))
+                    series.append(serie.to_frame('%s_%s_%s' % (shortcode, sensor, station)))
+
+                    # Clean up scope.
+                    del sensorSerie
+                    del timestamps
+                    del values
+                    del serie
+            else:
+                values = list(map(lambda x: x[1], seriesHolder[shortcode]))
+                serie = pd.Series(values, index=pd.DatetimeIndex(timestamps))
+
+                if len(values) > 0:
+                    serie = pd.Series(values, index=pd.DatetimeIndex(timestamps))
+                    series.append(serie.to_frame('%s_%s' % (shortcode, station)))
+
+                # Clean up scope.
+                del values
+                del serie
+
+            # Clean up memory.
+            gc.collect()
+
+        # Clean up.
+        del seriesHolder
+        gc.collect()
+
+        # Merge all series together.
+        if len(series) > 0:
+            df = pd.concat(series, axis=1, sort=True)
+        else:
+            df = pd.DataFrame()
+
+        # Clean up memory.
+        del series
+        gc.collect()
+
+        return df
 
 
-# # stations in the TAHMO Network
-# stations_list = [i for i in list(getStations()) if i[1] != 'H']
-
-# problems = []
-# df_stats = []
-
-# for station in stations_list:
-
-#     print(station)
-#     # if station not in problem:
-#     try:
-#         data = getMeasurements(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
-#         # df_stats.append(data)
-#         df_stats.append(data)
-#         df = pd.concat(df_stats, axis=1)
-        
-#         # print(df)
-#     except UnboundLocalError:
-#         problems.append(station)
-#         print(problems)
-#     df = pd.concat(df_stats, axis=1)
-#     df.to_csv('stati0n677.csv')
-
-# Measurements for multiple stations
 def getMultiples(stations_list, csv_file):
+    error_list = []
     if isinstance(stations_list, list):
         problems = []
         df_stats = []
-
+        
         for station in stations_list:
 
             print(station)
             # if station not in problem:
             try:
                 data = getMeasurements(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
+                agg_data = aggregate_variables(data)
+                # df_stats.append(data)
+                df_stats.append(agg_data)
+                df = pd.concat(df_stats, axis=1)
+                df.to_csv(f'{csv_file}.csv')
+                
+                # print(df)
+            except UnboundLocalError:
+                problems.append(station)
+                print(problems)
+            except requests.exceptions.ConnectTimeout:
+                error_list.append(station)
+        
+        
+        if len(error_list) > 1:
+            getMultiples_plus_flags(error_list, 'connectionLost')
+        return df
+
+        
+    else:
+        raise ValueError('Pass in a list')
+        
+
+
+
+# Measurements for multiple stations 
+def getMultiples_plus_flags(stations_list, csv_file):
+    error_list = []
+    if isinstance(stations_list, list):
+        problems = []
+        df_stats = []
+        
+        for station in stations_list:
+
+            print(station)
+            # if station not in problem:
+            try:
+                data = getMeasurements_and_Flags(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
                 # df_stats.append(data)
                 df_stats.append(data)
                 df = pd.concat(df_stats, axis=1)
@@ -275,8 +421,14 @@ def getMultiples(stations_list, csv_file):
             except UnboundLocalError:
                 problems.append(station)
                 print(problems)
+            except requests.exceptions.ConnectTimeout:
+                error_list.append(station)
             df = pd.concat(df_stats, axis=1)
             df.to_csv(f'{csv_file}.csv')
+        
+        
+        if len(error_list) > 1:
+            getMultiples_plus_flags(error_list, 'connectionLost')
         return df
 
         
@@ -290,8 +442,11 @@ def load_json(json_file):
     other_failure = json_data[~((json_data['description'].str.contains('clog')) | (json_data['description'].str.contains('block')))]
     return clog, other_failure
 
+
+
 clog, other_failure = load_json('qualityobjects.json')
 clog_list = list(clog.stationCode.unique())
+other_failure = list(clog.stationCode.unique())
 
 if __name__ == '__main__':
     getMultiples(clog_list, 'clogged_stations')
