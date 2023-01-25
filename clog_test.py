@@ -232,26 +232,66 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
         
 
 
-# stations in the TAHMO Network
-stations_list = [i for i in list(getStations()) if i[1] != 'H']
+# # stations in the TAHMO Network
+# stations_list = [i for i in list(getStations()) if i[1] != 'H']
 
-problems = []
-df_stats = []
+# problems = []
+# df_stats = []
 
-for station in stations_list:
+# for station in stations_list:
 
-    print(station)
-    # if station not in problem:
-    try:
-        data = getMeasurements(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
-        # df_stats.append(data)
-        df_stats.append(data)
-        df = pd.concat(df_stats, axis=1)
+#     print(station)
+#     # if station not in problem:
+#     try:
+#         data = getMeasurements(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
+#         # df_stats.append(data)
+#         df_stats.append(data)
+#         df = pd.concat(df_stats, axis=1)
         
-        # print(df)
-    except UnboundLocalError:
-        problems.append(station)
-        print(problems)
-    df = pd.concat(df_stats, axis=1)
-    df.to_csv('stati0n677.csv')
+#         # print(df)
+#     except UnboundLocalError:
+#         problems.append(station)
+#         print(problems)
+#     df = pd.concat(df_stats, axis=1)
+#     df.to_csv('stati0n677.csv')
 
+# Measurements for multiple stations
+def getMultiples(stations_list, csv_file):
+    if isinstance(stations_list, list):
+        problems = []
+        df_stats = []
+
+        for station in stations_list:
+
+            print(station)
+            # if station not in problem:
+            try:
+                data = getMeasurements(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
+                # df_stats.append(data)
+                df_stats.append(data)
+                df = pd.concat(df_stats, axis=1)
+                
+                # print(df)
+            except UnboundLocalError:
+                problems.append(station)
+                print(problems)
+            df = pd.concat(df_stats, axis=1)
+            df.to_csv(f'{csv_file}.csv')
+        return df
+
+        
+    else:
+        raise ValueError('Pass in a list')
+
+# Loading the json file
+def load_json(json_file):
+    json_data = pd.read_json(json_file)
+    clog = json_data[(json_data['description'].str.contains('clog')) | (json_data['description'].str.contains('block'))][['endDate', 'startDate', 'sensorCode', 'stationCode']]
+    other_failure = json_data[~((json_data['description'].str.contains('clog')) | (json_data['description'].str.contains('block')))]
+    return clog, other_failure
+
+clog, other_failure = load_json('qualityobjects.json')
+clog_list = list(clog.stationCode.unique())
+
+if __name__ == '__main__':
+    getMultiples(clog_list, 'clogged_stations')
