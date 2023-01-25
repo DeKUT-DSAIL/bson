@@ -179,7 +179,7 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
                 serie = pd.Series(flags_vals, index=pd.DatetimeIndex(timestamps))
 
                 both = pd.concat(objs=[code_series, quality_series], axis=1)
-                both.columns = [f'{shortcode}_{sensor}', 'Quality']
+                both.columns = [f'{shortcode}_{station}_{sensor}', f'Qc_{station}']
                 
                 # series.append(serie.to_frame('%s_%s' % (shortcode, sensor)))
                 series.append(both)
@@ -200,7 +200,7 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
             quality_series = pd.Series(quality, index=pd.DatetimeIndex(timestamps))
 
             both = pd.concat(objs=[code_series, quality_series], axis=1)
-            both.columns = [f'{shortcode}_{list(set(list(map(lambda x: x[2], seriesHolder[shortcode]))))[0]}', 'Quality']
+            both.columns = [f'{shortcode}_{station}_{list(set(list(map(lambda x: x[2], seriesHolder[shortcode]))))[0]}', f'Qc_{station}']
             
             # series.append(serie.to_frame('%s_%s' % (shortcode, sensor)))
             series.append(both)
@@ -229,6 +229,29 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
     return df
 
 
+        
+
+
 # stations in the TAHMO Network
 stations_list = [i for i in list(getStations()) if i[1] != 'H']
+
+problems = []
+df_stats = []
+
+for station in stations_list:
+
+    print(station)
+    # if station not in problem:
+    try:
+        data = getMeasurements(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
+        # df_stats.append(data)
+        df_stats.append(data)
+        df = pd.concat(df_stats, axis=1)
+        
+        # print(df)
+    except UnboundLocalError:
+        problems.append(station)
+        print(problems)
+    df = pd.concat(df_stats, axis=1)
+    df.to_csv('stati0n677.csv')
 
