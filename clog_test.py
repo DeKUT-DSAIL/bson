@@ -13,8 +13,8 @@ import numpy as np
 # Constants
 API_BASE_URL = 'https://datahub.tahmo.org'
 API_MAX_PERIOD = '365D'
-apiKey = 'SensorDxKenya'
-apiSecret = '6GUXzKi#wvDvZ'
+apiKey = ''
+apiSecret = ''
 
 endpoints = {'VARIABLES': 'services/assets/v2/variables', # 28 different variables
              'STATION_INFO': 'services/assets/v2/stations',
