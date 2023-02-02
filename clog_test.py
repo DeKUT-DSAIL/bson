@@ -59,7 +59,7 @@ def getVariables():
             variables[element['variable']['shortcode']] = element['variable']
     return variables
 
-def getStations(longitude=[], latitude=[], countrycode=None, stat=1):
+def getStations(longitude=[], latitude=[], countrycode=None):
     reqUrl = "https://datahub.tahmo.org/services/assets/v2/stations"
 
     headersList = {
@@ -75,9 +75,9 @@ def getStations(longitude=[], latitude=[], countrycode=None, stat=1):
     stations = pd.json_normalize(response['data'])
     if countrycode:
         return stations[stations['location.countrycode'] == f'{countrycode.upper()}']
-    elif latitude and longitude and stat ==1:
+    elif len(latitude)==1 and len(longitude)==1:
         return stations[(stations['location.longitude'] == longitude[0]) & (stations['location.latitude'] == latitude[0])]
-    elif latitude and longitude and stat != 1:
+    elif len(latitude)==2 and len(longitude)==2:
         latitude = sorted(latitude)
         longitude = sorted(longitude)
         return stations[(stations['location.longitude'] >= longitude[0]) & (stations['location.longitude'] <= longitude[1]) & (stations['location.latitude'] >= latitude[0]) & (stations['location.latitude'] <= latitude[1])]
