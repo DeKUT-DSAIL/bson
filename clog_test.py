@@ -59,13 +59,30 @@ def getVariables():
             variables[element['variable']['shortcode']] = element['variable']
     return variables
 
-def getStations():
-    response = __request(endpoints['STATION_INFO'], {'sort':'code'})
-    stations = {}
-    if 'data' in response and isinstance(response['data'], list):
-        for element in response['data']:
-            stations[element['code']] = element
-    return stations
+def getStations(longitude=[], latitude=[], countrycode=None, stat=1):
+    reqUrl = "https://datahub.tahmo.org/services/assets/v2/stations"
+
+    headersList = {
+    "Accept": "*/*",
+    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+    "Authorization": "Basic U2Vuc29yRHhLZW55YTo2R1VYektpI3d2RHZa" 
+    }
+
+    payload = ""
+
+    response = requests.request("GET", reqUrl, data=payload, headers=headersList).json()
+
+    stations = pd.json_normalize(response['data'])
+    if countrycode:
+        return stations[stations['location.countrycode'] == f'{countrycode.upper()}']
+    elif latitude and longitude and stat ==1:
+        return stations[(stations['location.longitude'] == longitude[0]) & (stations['location.latitude'] == latitude[0])]
+    elif latitude and longitude and stat != 1:
+        latitude = sorted(latitude)
+        longitude = sorted(longitude)
+        return stations[(stations['location.longitude'] >= longitude[0]) & (stations['location.longitude'] <= longitude[1]) & (stations['location.latitude'] >= latitude[0]) & (stations['location.latitude'] <= latitude[1])]
+    else:
+        return stations
 
 def __splitDateRange(inputStartDate, inputEndDate):
     try:
