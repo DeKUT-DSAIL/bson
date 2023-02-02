@@ -60,23 +60,16 @@ def getVariables():
     return variables
 
 def getStations(longitude=[], latitude=[], countrycode=None):
-    reqUrl = "https://datahub.tahmo.org/services/assets/v2/stations"
 
-    headersList = {
-    "Accept": "*/*",
-    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-    "Authorization": "Basic U2Vuc29yRHhLZW55YTo2R1VYektpI3d2RHZa" 
-    }
-
-    payload = ""
-
-    response = requests.request("GET", reqUrl, data=payload, headers=headersList).json()
+    response = __request(endpoints['STATION_INFO'], {'sort':'code'})
 
     stations = pd.json_normalize(response['data'])
     if countrycode:
         return stations[stations['location.countrycode'] == f'{countrycode.upper()}']
-    elif len(latitude)==1 and len(longitude)==1:
+    # Retrieving by latitude and longitude
+    elif len(latitude)==1 and len(longitude)==1: 
         return stations[(stations['location.longitude'] == longitude[0]) & (stations['location.latitude'] == latitude[0])]
+    # Given a range to look at
     elif len(latitude)==2 and len(longitude)==2:
         latitude = sorted(latitude)
         longitude = sorted(longitude)
@@ -103,7 +96,7 @@ def __splitDateRange(inputStartDate, inputEndDate):
     df['end'].iloc[-1] = pd.Timestamp(endDate)
     return df
 
-# Aggregate per day
+# Aggregate per day with flags
 def aggregate_with_flags(csv_file):
     df = pd.read_csv(csv_file)
     df.rename(columns = {'Unnamed: 0':'Date'}, inplace = True)
