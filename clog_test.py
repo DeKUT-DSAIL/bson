@@ -13,8 +13,8 @@ import numpy as np
 # Constants
 API_BASE_URL = 'https://datahub.tahmo.org'
 API_MAX_PERIOD = '365D'
-apiKey = ''
-apiSecret = ''
+apiKey = 'SensorDxKenya'
+apiSecret = '6GUXzKi#wvDvZ'
 
 endpoints = {'VARIABLES': 'services/assets/v2/variables', # 28 different variables
              'STATION_INFO': 'services/assets/v2/stations',
@@ -373,7 +373,7 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
         return df
 
 
-def getMultiples(stations_list, csv_file):
+def getMultiples(stations_list, csv_file, startDate=None, endDate=None, variables=None, dataset='controlled'):
     error_list = []
     if isinstance(stations_list, list):
         problems = []
@@ -384,7 +384,7 @@ def getMultiples(stations_list, csv_file):
             print(station)
             # if station not in problem:
             try:
-                data = getMeasurements(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
+                data = getMeasurements(station, startDate, endDate, variables)
                 agg_data = aggregate_variables(data)
                 # df_stats.append(data)
                 df_stats.append(agg_data)
@@ -400,7 +400,7 @@ def getMultiples(stations_list, csv_file):
         
         
         if len(error_list) > 1:
-            getMultiples_plus_flags(error_list, 'connectionLost')
+            getMultiples(error_list, 'connectionLost')
         return df
 
         
@@ -448,8 +448,8 @@ def getMultiples_plus_flags(stations_list, csv_file):
 # Loading the json file
 def load_json(json_file):
     json_data = pd.read_json(json_file)
-    clog = json_data[(json_data['description'].str.contains('clog')) | (json_data['description'].str.contains('block'))][['endDate', 'startDate', 'sensorCode', 'stationCode']]
-    other_failure = json_data[~((json_data['description'].str.contains('clog')) | (json_data['description'].str.contains('block')))]
+    clog = json_data[~json_data['description'].str.contains('batter')][['endDate', 'startDate', 'sensorCode', 'stationCode']]
+    other_failure = json_data[json_data['description'].str.contains('batter')][['endDate', 'startDate', 'sensorCode', 'stationCode']]
     return clog, other_failure
 
 
