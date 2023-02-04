@@ -458,88 +458,97 @@ clog, other_failure = load_json('qualityobjects.json')
 clog_list = list(clog.stationCode.unique())
 other_failure = list(clog.stationCode.unique())
 
-df_oth= []
-df_cl = []
-count = 0
-df_cl_l = []
+def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, json_file='qualityobjects.json', csv_file='ClogFlags', variables=['pr']):
+    stations_ = getStations(longitude, latitude, countrycode)
+    json_data = pd.read_json(json_file)
+    stations_pr = getMultiples(stations_, csv_file, startdate, enddate, variables, dataset='controlled')
 
-# cols = station_sensorcode
+    df_oth= []
+    df_cl = []
+    count = 0
+    df_cl_l = []
 
-for cols in station_test2.columns:
-    for ind, row in json_data.iterrows():
-        other_failure = list(json_data[json_data['description'].str.contains('batter')].index)
-        clog = list(json_data[~json_data['description'].str.contains('batter')].index)
-        
-        station_sensor = f'{row["stationCode"]}_{row["sensorCode"]}'
-        if station_sensor == cols:
-            # print(row['startDate'])
-            startDate = dateutil.parser.parse('2017-01-01T00:00:00.000Z')
-            endDate = dateutil.parser.parse('2022-10-31T00:00:00.000Z')
-            rowStartDate = dateutil.parser.parse(row['startDate'])
-            rowEndDate = dateutil.parser.parse(row['endDate'])
-            if startDate < rowStartDate and endDate > rowEndDate:                    
-                if ind in other_failure:
-                    dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-                    others = [-1 for i in range(len(dates))] # -1 for battery/other failure
-                    others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlagBat']).set_index('Date')
-                    others_df.index = others_df.index.astype('datetime64[ns, UTC]')
-                    df_oth.append(others_df)
-                    df_other = pd.concat(df_oth, axis=1, sort=True)
-                    
-                elif ind in clog:
-                    dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-                    clogggs = [1 for i in range(len(dates))] # 1 for clogged station
-                    clogggs_df = pd.DataFrame(zip(dates, clogggs), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
-                    clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
-                    df_cl.append(clogggs_df)
-                    df_clog = pd.concat(df_cl, axis=1, sort=True)
-                
-                # Merging the columns -1 -- Battery, 1 CLOG, 0 clog and battery
+    # cols = station_sensorcode
+    other_failure = list(json_data[json_data['description'].str.contains('batter')].index)
+    clog = list(json_data[~json_data['description'].str.contains('batter')].index)
+
+    for cols in stations_pr.columns:
+        for ind, row in json_data.iterrows():
             
-    dfcv = pd.concat(objs=[station_test2, df_other, df_clog], axis=1, sort=True)
-            # elif startDate > rowStartDate:
-            #     print('Clogging/Failure Began before January 2017')
-            #     rowStartDate = startDate
-            #     if ind in other_failure:
-            #         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-            #         others = [-1 for i in range(len(dates))] # -1 for battery/other failure
-            #         others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlagBat']).set_index('Date')
-            #         others_df.index = others_df.index.astype('datetime64[ns, UTC]')
-            #         df_oth.append(others_df)
-            #         df_other = pd.concat(df_oth, axis=1, sort=True)
-            #         # df_clogs = pd.concat(objs=[station_test2[cols], df], axis=1, sort=True)
-            #     elif ind in clog:
-            #         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-            #         clogggs = [1 for i in range(len(dates))] # 1 for clogged station
-            #         clogggs_df = pd.DataFrame(zip(dates, clogggs), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
-            #         clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
-            #         df_cl.append(clogggs_df)
-            #         df_clog = pd.concat(df_cl, axis=1, sort=True)
-            # else:
-            #     print('Clogging/Failure continued after October 2022')
-            #     rowEndDate = endDate
-            #     print(rowEndDate)
-            #     if ind in other_failure:
-            #         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-            #         others = [-1 for i in range(len(dates))] # -1 for battery/other failure
-            #         others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlagBat']).set_index('Date')
-            #         others_df.index = others_df.index.astype('datetime64[ns, UTC]')
-            #         df_oth.append(others_df)
-            #         df_other = pd.concat(df_oth, axis=1, sort=True)
-            #         # df_clogs = pd.concat(objs=[station_test2[cols], df], axis=1, sort=True)
-            #     elif ind in clog:
-            #         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-            #         clogggs = [1 for i in range(len(dates))] # 1 for clogged station
-            #         clogggs_df = pd.DataFrame(zip(dates, clogggs), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
-            #         clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
-            #         df_cl.append(clogggs_df)
-            #         df_clog = pd.concat(df_cl, axis=1, sort=True)
+            station_sensor = f'{row["stationCode"]}_{row["sensorCode"]}'
+            if station_sensor == cols:
+                # print(row['startDate'])
+                '''Add to chose the range to filter'''
+                startDate = dateutil.parser.parse('2017-01-01T00:00:00.000Z')
+                endDate = dateutil.parser.parse('2022-10-31T00:00:00.000Z')
+                rowStartDate = dateutil.parser.parse(row['startDate'])
+                rowEndDate = dateutil.parser.parse(row['endDate'])
+                if startDate < rowStartDate and endDate > rowEndDate:                    
+                    if ind in other_failure:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        others = [2 for i in range(len(dates))] # -1 for battery/other failure
+                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
+                        others_df.index = others_df.index.astype('datetime64[ns, UTC]')
+                        df_oth.append(others_df)
+                        df_other = pd.concat(df_oth, axis=1, sort=True)
+                        
+                    elif ind in clog:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        clogggs = [1 for i in range(len(dates))] # 1 for clogged station
+                        clogggs_df = pd.DataFrame(zip(dates, clogggs), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
+                        clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
+                        df_cl.append(clogggs_df)
+                        df_clog = pd.concat(df_cl, axis=1, sort=True)
+                    
+                elif startDate > rowStartDate:
+                    print('Clogging/Failure Began before January 2017')
+                    rowStartDate = startDate
+                    if ind in other_failure:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        others = [-1 for i in range(len(dates))] # -1 for battery/other failure
+                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlagBat']).set_index('Date')
+                        others_df.index = others_df.index.astype('datetime64[ns, UTC]')
+                        df_oth.append(others_df)
+                        df_other = pd.concat(df_oth, axis=1, sort=True)
+                        # df_clogs = pd.concat(objs=[station_test2[cols], df], axis=1, sort=True)
+                    elif ind in clog:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        clogggs = [1 for i in range(len(dates))] # 1 for clogged station
+                        clogggs_df = pd.DataFrame(zip(dates, clogggs), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
+                        clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
+                        df_cl.append(clogggs_df)
+                        df_clog = pd.concat(df_cl, axis=1, sort=True)
+                else:
+                    print('Clogging/Failure continued after October 2022')
+                    rowEndDate = endDate
+                    print(rowEndDate)
+                    if ind in other_failure:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        others = [-1 for i in range(len(dates))] # -1 for battery/other failure
+                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlagBat']).set_index('Date')
+                        others_df.index = others_df.index.astype('datetime64[ns, UTC]')
+                        df_oth.append(others_df)
+                        df_other = pd.concat(df_oth, axis=1, sort=True)
+                        # df_clogs = pd.concat(objs=[station_test2[cols], df], axis=1, sort=True)
+                    elif ind in clog:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        clogggs = [1 for i in range(len(dates))] # 1 for clogged station
+                        clogggs_df = pd.DataFrame(zip(dates, clogggs), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
+                        clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
+                        df_cl.append(clogggs_df)
+                        df_clog = pd.concat(df_cl, axis=1, sort=True)
+            dfcv = pd.concat(objs=[stations_pr, df_other, df_clog], axis=1, sort=True)
+    #define function to merge columns with same names together
+    def same_merge(x): return ';'.join(x[x.notnull()].astype(str))
+
+    #define new DataFrame that merges columns with same names together
+    df_new = dfcv.groupby(level=0, axis=1).apply(lambda x: x.apply(same_merge, axis=1))
+    df_new.to_csv(f'{csv_file}.csv')
 
     '''
     Columns can be faulty at different instances in time merge similar columns by adding
-    Should be either 1/0 not unless a system error 
-    Add the two and add 5 
-    if 5 then description error
+    Should be either 1/2 not unless a system error 
+    if 3 then description error
     '''
 
 
@@ -548,7 +557,6 @@ for cols in station_test2.columns:
     
     # df_clogs.columns = [cols, f'{cols}_clogFlag']
     
-
 
 if __name__ == '__main__':
     getMultiples(clog_list, 'clogged_stations')
