@@ -462,7 +462,9 @@ def load_json(json_file):
 
 
 
-def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, json_file='qualityobjects.json', csv_file='ClogFlags', variables=['pr']):
+
+
+def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, json_file='qualityobjects.json', csv_file='ClogFlags2', variables=['pr']):
     stations_ = getStations(longitude, latitude, countrycode)
     stations = list(stations_['code'])
     json_data = pd.read_json(json_file)
@@ -491,7 +493,7 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
                 if startDate < rowStartDate and endDate > rowEndDate:                    
                     if ind in other_failure:
                         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-                        others = [2 for i in range(len(dates))] # -1 for battery/other failure
+                        others = [2 for i in range(len(dates))] # 2 for battery/other failure
                         others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
                         others_df.index = others_df.index.astype('datetime64[ns, UTC]')
                         df_oth.append(others_df)
@@ -505,17 +507,17 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
                         df_cl.append(clogggs_df)
                         df_clog = pd.concat(df_cl, axis=1, sort=True)
                     
-                elif startDate > rowStartDate:
+                elif startDate > rowStartDate and endDate > rowEndDate:
                     print('Clogging/Failure Began before January 2017')
                     rowStartDate = startDate
                     if ind in other_failure:
                         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-                        others = [-1 for i in range(len(dates))] # -1 for battery/other failure
-                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlagBat']).set_index('Date')
+                        others = [2 for i in range(len(dates))] # 2 for battery/other failure
+                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
                         others_df.index = others_df.index.astype('datetime64[ns, UTC]')
                         df_oth.append(others_df)
                         df_other = pd.concat(df_oth, axis=1, sort=True)
-                        # df_clogs = pd.concat(objs=[station_test2[cols], df], axis=1, sort=True)
+                        
                     elif ind in clog:
                         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
                         clogggs = [1 for i in range(len(dates))] # 1 for clogged station
@@ -523,18 +525,39 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
                         clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
                         df_cl.append(clogggs_df)
                         df_clog = pd.concat(df_cl, axis=1, sort=True)
+                elif startDate > rowStartDate and endDate < rowEndDate:
+                  print('Clogging persisted for the duration')
+                  rowEndDate = endDate
+                  rowStartDate = startDate
+                  if ind in other_failure:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        others = [2 for i in range(len(dates))] # 2 for battery/other failure
+                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
+                        others_df.index = others_df.index.astype('datetime64[ns, UTC]')
+                        df_oth.append(others_df)
+                        df_other = pd.concat(df_oth, axis=1, sort=True)
+                        
+                  elif ind in clog:
+                        dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
+                        clogggs = [1 for i in range(len(dates))] # 1 for clogged station
+                        clogggs_df = pd.DataFrame(zip(dates, clogggs), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
+                        clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
+                        df_cl.append(clogggs_df)
+                        df_clog = pd.concat(df_cl, axis=1, sort=True)
+
                 else:
                     print('Clogging/Failure continued after October 2022')
                     rowEndDate = endDate
-                    print(rowEndDate)
+                    
+                    # print(rowEndDate)
                     if ind in other_failure:
                         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
-                        others = [-1 for i in range(len(dates))] # -1 for battery/other failure
-                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlagBat']).set_index('Date')
+                        others = [2 for i in range(len(dates))] # 2 for battery/other failure
+                        others_df = pd.DataFrame(zip(dates, others), columns=['Date', f'{station_sensor}_clogFlag']).set_index('Date')
                         others_df.index = others_df.index.astype('datetime64[ns, UTC]')
                         df_oth.append(others_df)
                         df_other = pd.concat(df_oth, axis=1, sort=True)
-                        # df_clogs = pd.concat(objs=[station_test2[cols], df], axis=1, sort=True)
+                        #
                     elif ind in clog:
                         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
                         clogggs = [1 for i in range(len(dates))] # 1 for clogged station
@@ -542,14 +565,16 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
                         clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
                         df_cl.append(clogggs_df)
                         df_clog = pd.concat(df_cl, axis=1, sort=True)
-            dfcv = pd.concat(objs=[stations_pr, df_other, df_clog], axis=1, sort=True)
+    try:
+      dfcv = pd.concat(objs=[stations_pr, df_other, df_clog], axis=1, sort=True)
+    except NameError:
+      dfcv = pd.concat(objs=[stations_pr, df_clog], axis=1, sort=True)
     #define function to merge columns with same names together
     def same_merge(x): return ';'.join(x[x.notnull()].astype(str))
 
     #define new DataFrame that merges columns with same names together
     df_new = dfcv.groupby(level=0, axis=1).apply(lambda x: x.apply(same_merge, axis=1))
-    df_new.to_csv(f'{csv_file}.csv')
-
+    df_new.to_csv('/content/ClogFlags24.csv')
     '''
     Columns can be faulty at different instances in time merge similar columns by adding
     Should be either 1/2 not unless a system error 
