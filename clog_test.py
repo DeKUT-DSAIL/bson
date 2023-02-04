@@ -334,7 +334,7 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
                     timestamps = list(map(lambda x: pd.Timestamp(x[0]), sensorSerie))
                     values = list(map(lambda x: x[1], sensorSerie))
                     serie = pd.Series(values, index=pd.DatetimeIndex(timestamps))
-                    series.append(serie.to_frame('%s_%s_%s' % (shortcode, sensor, station)))
+                    series.append(serie.to_frame(f'{station}_{sensor}'))
 
                     # Clean up scope.
                     del sensorSerie
@@ -346,8 +346,9 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
                 serie = pd.Series(values, index=pd.DatetimeIndex(timestamps))
 
                 if len(values) > 0:
+                    sensors = list(set(list(map(lambda x: x[2], seriesHolder[shortcode]))))
                     serie = pd.Series(values, index=pd.DatetimeIndex(timestamps))
-                    series.append(serie.to_frame('%s_%s' % (shortcode, station)))
+                    series.append(serie.to_frame(f'{station}_{sensors[0]}'))
 
                 # Clean up scope.
                 del values
@@ -373,7 +374,7 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
         return df
 
 
-def getMultiples(stations_list, csv_file, startDate=None, endDate=None, variables=None, dataset='controlled'):
+def getMultiples(stations_list, csv_file, startDate, endDate, variables, dataset='controlled'):
     error_list = []
     if isinstance(stations_list, list):
         problems = []
@@ -381,7 +382,7 @@ def getMultiples(stations_list, csv_file, startDate=None, endDate=None, variable
         
         for station in stations_list:
 
-            print(station)
+            print(stations_list.index(station))
             # if station not in problem:
             try:
                 data = getMeasurements(station, startDate, endDate, variables)
@@ -392,20 +393,19 @@ def getMultiples(stations_list, csv_file, startDate=None, endDate=None, variable
                 df.to_csv(f'{csv_file}.csv')
                 
                 # print(df)
-            except UnboundLocalError:
-                problems.append(station)
-                print(problems)
+            # except UnboundLocalError:
+            #     problems.append(station)
+            #     print(problems)
             except requests.exceptions.ConnectTimeout:
                 error_list.append(station)
         
-        
         if len(error_list) > 1:
             getMultiples(error_list, 'connectionLost')
-        return df
-
         
     else:
         raise ValueError('Pass in a list')
+    
+    return df
         
 
 
