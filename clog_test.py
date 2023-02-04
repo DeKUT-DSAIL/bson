@@ -9,12 +9,18 @@ import datetime
 import gc
 import requests
 import numpy as np
+import argparse
 
 # Constants
 API_BASE_URL = 'https://datahub.tahmo.org'
 API_MAX_PERIOD = '365D'
-apiKey = 'SensorDxKenya'
-apiSecret = '6GUXzKi#wvDvZ'
+
+# Load json cofig file
+with open('config.json') as f:
+    conf = json.load(f)
+
+apiKey = conf['apiKey']
+apiSecret = conf['apiSecret']
 
 endpoints = {'VARIABLES': 'services/assets/v2/variables', # 28 different variables
              'STATION_INFO': 'services/assets/v2/stations',
@@ -411,7 +417,7 @@ def getMultiples(stations_list, csv_file, startDate, endDate, variables, dataset
 
 
 # Measurements for multiple stations 
-def getMultiples_plus_flags(stations_list, csv_file):
+def getMultiples_plus_flags(stations_list, csv_file, startDate, endDate, variables, dataset='controlled'):
     error_list = []
     if isinstance(stations_list, list):
         problems = []
@@ -422,7 +428,7 @@ def getMultiples_plus_flags(stations_list, csv_file):
             print(station)
             # if station not in problem:
             try:
-                data = getMeasurements_and_Flags(station, '2017-01-01', '2022-10-31', variables=['pr'], dataset='controlled')
+                data = getMeasurements_and_Flags(station, startDate, endDate, variables)
                 # df_stats.append(data)
                 df_stats.append(data)
                 df = pd.concat(df_stats, axis=1)
@@ -454,14 +460,11 @@ def load_json(json_file):
 
 
 
-clog, other_failure = load_json('qualityobjects.json')
-clog_list = list(clog.stationCode.unique())
-other_failure = list(clog.stationCode.unique())
-
 def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, json_file='qualityobjects.json', csv_file='ClogFlags', variables=['pr']):
     stations_ = getStations(longitude, latitude, countrycode)
+    stations = list(stations_['code'])
     json_data = pd.read_json(json_file)
-    stations_pr = getMultiples(stations_, csv_file, startdate, enddate, variables, dataset='controlled')
+    stations_pr = getMultiples(stations, csv_file, startdate, enddate, variables, dataset='controlled')
 
     df_oth= []
     df_cl = []
@@ -559,4 +562,4 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
     
 
 if __name__ == '__main__':
-    getMultiples(clog_list, 'clogged_stations')
+    getClogs(startdate='2017-01-01', enddate='2022-10-31', countrycode='ke')
