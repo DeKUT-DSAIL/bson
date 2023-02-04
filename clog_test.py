@@ -404,8 +404,10 @@ def getMultiples(stations_list, csv_file, startDate, endDate, variables, dataset
             #     print(problems)
             except requests.exceptions.ConnectTimeout:
                 error_list.append(station)
+            except:
+                error_list.append(station)
         
-        if len(error_list) > 1:
+        if len(error_list) >= 1:
             getMultiples(error_list, 'connectionLost')
         
     else:
