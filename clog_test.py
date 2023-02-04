@@ -574,7 +574,7 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
 
     #define new DataFrame that merges columns with same names together
     df_new = dfcv.groupby(level=0, axis=1).apply(lambda x: x.apply(same_merge, axis=1))
-    df_new.to_csv('/content/ClogFlags24.csv')
+    df_new.to_csv(f'{csv_file}2.csv')
     '''
     Columns can be faulty at different instances in time merge similar columns by adding
     Should be either 1/2 not unless a system error 
