@@ -402,13 +402,16 @@ def getMultiples(stations_list, csv_file, startDate, endDate, variables, dataset
             # except UnboundLocalError:
             #     problems.append(station)
             #     print(problems)
-            except requests.exceptions.ConnectTimeout:
-                error_list.append(station)
+            # except requests.exceptions.ConnectTimeout:
+            #     error_list.append(station)
             except:
                 error_list.append(station)
+                
         
         if len(error_list) >= 1:
-            getMultiples(error_list, 'connectionLost')
+            with open('Station.txt', 'w') as dfb:
+                  dfv = dfb.write(f'{station}')
+        #     getMultiples(error_list, 'connectionLost')
         
     else:
         raise ValueError('Pass in a list')
@@ -446,7 +449,9 @@ def getMultiples_plus_flags(stations_list, csv_file, startDate, endDate, variabl
         
         
         if len(error_list) > 1:
-            getMultiples_plus_flags(error_list, 'connectionLost')
+          with open('Station.txt', 'w') as dfb:
+            dfv = dfb.write(f'{station}')
+          getMultiples_plus_flags(error_list, 'connectionLost')
         return df
 
         
@@ -459,8 +464,6 @@ def load_json(json_file):
     clog = json_data[~json_data['description'].str.contains('batter')][['endDate', 'startDate', 'sensorCode', 'stationCode']]
     other_failure = json_data[json_data['description'].str.contains('batter')][['endDate', 'startDate', 'sensorCode', 'stationCode']]
     return clog, other_failure
-
-
 
 
 
@@ -575,6 +578,9 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
     #define new DataFrame that merges columns with same names together
     df_new = dfcv.groupby(level=0, axis=1).apply(lambda x: x.apply(same_merge, axis=1))
     df_new.to_csv(f'{csv_file}2.csv')
+                    
+
+
     '''
     Columns can be faulty at different instances in time merge similar columns by adding
     Should be either 1/2 not unless a system error 
