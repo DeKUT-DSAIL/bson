@@ -410,7 +410,7 @@ def getMultiples(stations_list, csv_file, startDate, endDate, variables, dataset
         
         if len(error_list) >= 1:
             with open('Station.txt', 'w') as dfb:
-                  dfv = dfb.write(f'{station}')
+                  dfv = dfb.write(f'{error_list}')
         #     getMultiples(error_list, 'connectionLost')
         
     else:
@@ -450,7 +450,7 @@ def getMultiples_plus_flags(stations_list, csv_file, startDate, endDate, variabl
         
         if len(error_list) > 1:
           with open('Station.txt', 'w') as dfb:
-            dfv = dfb.write(f'{station}')
+            dfv = dfb.write(f'{error_list}')
           getMultiples_plus_flags(error_list, 'connectionLost')
         return df
 
