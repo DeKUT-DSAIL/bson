@@ -609,9 +609,34 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
 # Adding arguments to getclogs via terminal
 # Get stations 
 # Get location given stations
-    
+def parse_args():
+    parser = argparse.ArgumentParser(description='A dataset to build a clogging Model')
+
+    # Start and end date
+    parser.add_argument('--startDate', type=str, help='StartDate to retrieve the data')
+    parser.add_argument('--endDate', type=str, help='EndDate to retrieve the data')
+
+    # Latitude and longitude
+    parser.add_argument('--latitude', type=float, help='Pass one for a particular station and two for a range in the region')
+    parser.add_argument('--longitude', type=float, help='Pass one for a particular station and two for a range in the region')
+
+    # Countrycode
+    parser.add_argument('--countrycode', type=str, help='Retrieve stations by their country code')
+
+    # Station
+    parser.add_argument('--station', type=str, help='Retrieve a particular station')
+    parser.add_argument('--Multiple-stations', type=str, help='Retrieve multiple stations')
+
+    # CSV FILE TO Save 
+    parser.add_argument('--csvfile', type=str, help='CSV file to store the information')
+
+    args = parser.parse_args()
+    return args
 
 if __name__ == '__main__':
+    args = parse_args()
     # getClogs(startdate='2017-01-01', enddate='2022-10-31', countrycode='ke')
-    getClogs(startdate='2017-01-01', enddate='2021-10-31', latitude=[-6.848668], longitude=[39.082174])
+    # getClogs(startdate='2017-01-01', enddate='2021-10-31', latitude=[-6.848668], longitude=[39.082174])
+    if args.startDate and args.endDate or args.latitude or args.longitude or args.countrycode or args.csvfile:
+        getClogs(startdate=args.startDate, enddate=args.endDate, latitude=[args.latitude], longitude=[args.longitude], countrycode=args.countrycode, csv_file=args.csvfile)
 
