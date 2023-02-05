@@ -484,15 +484,17 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
 
     for cols in stations_pr.columns:
         for ind, row in json_data.iterrows():
-            
             station_sensor = f'{row["stationCode"]}_{row["sensorCode"]}'
             if station_sensor == cols:
+
                 # print(row['startDate'])
                 '''Add to chose the range to filter'''
                 startDate = dateutil.parser.parse('2017-01-01T00:00:00.000Z')
                 endDate = dateutil.parser.parse('2022-10-31T00:00:00.000Z')
                 rowStartDate = dateutil.parser.parse(row['startDate'])
                 rowEndDate = dateutil.parser.parse(row['endDate'])
+
+
                 if startDate < rowStartDate and endDate > rowEndDate:                    
                     if ind in other_failure:
                         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -577,21 +579,21 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
 
     #define new DataFrame that merges columns with same names together
     df_new = dfcv.groupby(level=0, axis=1).apply(lambda x: x.apply(same_merge, axis=1))
-    df_new.to_csv(f'{csv_file}2.csv')
-                    
-
-
-    '''
-    Columns can be faulty at different instances in time merge similar columns by adding
-    Should be either 1/2 not unless a system error 
-    if 3 then description error
-    '''
-
-
-               
-        # break
     
-    # df_clogs.columns = [cols, f'{cols}_clogFlag']
+
+    for cl in df_new.columns:
+        if cl.split('_')[-1] != 'clogFlag':
+            if f'{cl}_clogFlag' not in df_new.columns:
+                df_new[f'{cl}_clogFlag'] = [0 for i in range(len(df_new))]
+            else:
+                df_new[f'{cl}_clogFlag'] = df_new[f'{cl}_clogFlag'].fillna(0, axis=0) 
+
+    # Rearranging the columns and saving the file
+    df_new = df_new.reindex(sorted(df_new.columns), axis=1)
+    df_new = df_new.reset_index()
+    df_new.to_csv(f'{csv_file}2.csv', index=False)             
+
+
     
 
 if __name__ == '__main__':
