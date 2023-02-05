@@ -475,8 +475,6 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
 
     df_oth= []
     df_cl = []
-    count = 0
-    df_cl_l = []
 
     # cols = station_sensorcode
     other_failure = list(json_data[json_data['description'].str.contains('batter')].index)
@@ -489,11 +487,14 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
 
                 # print(row['startDate'])
                 '''Add to chose the range to filter'''
-                startDate = dateutil.parser.parse('2017-01-01T00:00:00.000Z')
-                endDate = dateutil.parser.parse('2022-10-31T00:00:00.000Z')
-                rowStartDate = dateutil.parser.parse(row['startDate'])
-                rowEndDate = dateutil.parser.parse(row['endDate'])
-
+                startDate = dateutil.parser.parse(startdate)
+                endDate = dateutil.parser.parse(enddate)
+                # startDate = dateutil.parser.parse('2017-01-01T00:00:00.000Z')
+                # endDate = dateutil.parser.parse('2022-10-31T00:00:00.000Z')
+                rowStartDate = dateutil.parser.parse(dateutil.parser.parse(row['startDate']).strftime('%Y-%m-%d'))
+                rowEndDate = dateutil.parser.parse(dateutil.parser.parse(row['endDate']).strftime('%Y-%m-%d'))
+                # rowEndDate = pd.to_datetime(row['endDate']).dt.tz_localize(None)
+                # rowStartDate = pd.to_datetime(row['startDate']).dt.tz_localize(None)
 
                 if startDate < rowStartDate and endDate > rowEndDate:                    
                     if ind in other_failure:
@@ -513,7 +514,7 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
                         df_clog = pd.concat(df_cl, axis=1, sort=True)
                     
                 elif startDate > rowStartDate and endDate > rowEndDate:
-                    print('Clogging/Failure Began before January 2017')
+                    print(f'Clogging/Failure Began before {startdate}')
                     rowStartDate = startDate
                     if ind in other_failure:
                         dates = pd.date_range(start=rowStartDate.strftime('%Y%m%d'), end=rowEndDate.strftime('%Y%m%d'), freq='1D').strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -551,7 +552,7 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
                         df_clog = pd.concat(df_cl, axis=1, sort=True)
 
                 else:
-                    print('Clogging/Failure continued after October 2022')
+                    print(f'Clogging/Failure continued after {enddate}')
                     rowEndDate = endDate
                     
                     # print(rowEndDate)
@@ -570,31 +571,47 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, js
                         clogggs_df.index = clogggs_df.index.astype('datetime64[ns, UTC]')
                         df_cl.append(clogggs_df)
                         df_clog = pd.concat(df_cl, axis=1, sort=True)
-    try:
-      dfcv = pd.concat(objs=[stations_pr, df_other, df_clog], axis=1, sort=True)
-    except NameError:
-      dfcv = pd.concat(objs=[stations_pr, df_clog], axis=1, sort=True)
-    #define function to merge columns with same names together
+                try:
+                    dfcv = pd.concat(objs=[stations_pr, df_other, df_clog], axis=1, sort=True)
+                except NameError:
+                    dfcv = pd.concat(objs=[stations_pr, df_clog], axis=1, sort=True)
+                    # except UnboundLocalError as f:
+            
+    
+    # #define function to merge columns with same names together
     def same_merge(x): return ';'.join(x[x.notnull()].astype(str))
 
-    #define new DataFrame that merges columns with same names together
-    df_new = dfcv.groupby(level=0, axis=1).apply(lambda x: x.apply(same_merge, axis=1))
-    
+    # #define new DataFrame that merges columns with same names together
+    try:
+        df_new = dfcv.groupby(level=0, axis=1).apply(lambda x: x.apply(same_merge, axis=1))
+    except UnboundLocalError:
+        df_new = stations_pr
+
+    df_new = pd.DataFrame([pd.to_numeric(df_new[i]) for i in df_new.columns]).T    
 
     for cl in df_new.columns:
+    
         if cl.split('_')[-1] != 'clogFlag':
+            
             if f'{cl}_clogFlag' not in df_new.columns:
                 df_new[f'{cl}_clogFlag'] = [0 for i in range(len(df_new))]
+                
             else:
                 df_new[f'{cl}_clogFlag'] = df_new[f'{cl}_clogFlag'].fillna(0, axis=0) 
 
     # Rearranging the columns and saving the file
     df_new = df_new.reindex(sorted(df_new.columns), axis=1)
+   
     df_new = df_new.reset_index()
     df_new.to_csv(f'{csv_file}2.csv', index=False)             
 
 
+# Adding arguments to getclogs via terminal
+# Get stations 
+# Get location given stations
     
 
 if __name__ == '__main__':
-    getClogs(startdate='2017-01-01', enddate='2022-10-31', countrycode='ke')
+    # getClogs(startdate='2017-01-01', enddate='2022-10-31', countrycode='ke')
+    getClogs(startdate='2017-01-01', enddate='2021-10-31', latitude=[-6.848668], longitude=[39.082174])
+
