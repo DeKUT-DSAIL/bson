@@ -4,7 +4,7 @@
 ```
 0 - "Not clogged"
 1 - "Clogged"
-2 - "Other Failure/ Battery"
+2 - "Other Failure/Battery"
 ```
 
 #### Structure 
