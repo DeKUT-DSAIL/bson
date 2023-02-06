@@ -397,6 +397,8 @@ def getMultiples(stations_list, csv_file, startDate, endDate, variables, dataset
                 df_stats.append(agg_data)
                 df = pd.concat(df_stats, axis=1)
                 df.to_csv(f'{csv_file}.csv')
+            except KeyboardInterrupt:
+                break
                 
                 # print(df)
             # except UnboundLocalError:
@@ -467,11 +469,18 @@ def load_json(json_file):
 
 
 
-def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, json_file='qualityobjects.json', csv_file='ClogFlags2', variables=['pr']):
-    stations_ = getStations(longitude, latitude, countrycode)
-    stations = list(stations_['code'])
+def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, station=None, multipleStations=None, json_file='qualityobjects.json', csv_file='ClogFlags2', variables=['pr']):
+    
     json_data = pd.read_json(json_file)
-    stations_pr = getMultiples(stations, csv_file, startdate, enddate, variables, dataset='controlled')
+    if multipleStations:
+        stations_pr = getMultiples(multipleStations, csv_file, startdate, enddate, variables, dataset='controlled')
+    elif station:
+        
+        stations_pr = getMultiples([station], csv_file, startdate, enddate, variables, dataset='controlled')
+    else:
+        stations_ = getStations(longitude, latitude, countrycode)
+        stations = list(stations_['code'])
+        stations_pr = getMultiples(stations, csv_file, startdate, enddate, variables, dataset='controlled')
 
     df_oth= []
     df_cl = []
@@ -625,7 +634,7 @@ def parse_args():
 
     # Station
     parser.add_argument('--station', type=str, help='Retrieve a particular station')
-    parser.add_argument('--Multiple-stations', type=str, help='Retrieve multiple stations')
+    parser.add_argument('--MultipleStations', nargs= '+', help='Retrieve multiple stations')
 
     # CSV FILE TO Save 
     parser.add_argument('--csvfile', type=str, help='CSV file to store the information')
@@ -637,6 +646,8 @@ if __name__ == '__main__':
     args = parse_args()
     # getClogs(startdate='2017-01-01', enddate='2022-10-31', countrycode='ke')
     # getClogs(startdate='2017-01-01', enddate='2021-10-31', latitude=[-6.848668], longitude=[39.082174])
-    if args.startDate and args.endDate or args.latitude or args.longitude or args.countrycode or args.csvfile:
-        getClogs(startdate=args.startDate, enddate=args.endDate, latitude=[args.latitude], longitude=[args.longitude], countrycode=args.countrycode, csv_file=args.csvfile)
+    if args.startDate and args.endDate or args.latitude or args.longitude or args.countrycode or args.csvfile or args.station or args.MultipleStations:
+        getClogs(startdate=args.startDate, enddate=args.endDate, 
+                 latitude=[args.latitude], longitude=[args.longitude], countrycode=args.countrycode, 
+                 csv_file=args.csvfile, station=args.station, multipleStations=args.MultipleStations)
 
