@@ -16,7 +16,7 @@ API_BASE_URL = 'https://datahub.tahmo.org'
 API_MAX_PERIOD = '365D'
 
 # Load json cofig file
-with open('/content/config.json') as f:
+with open('config.json') as f:
     conf = json.load(f)
 
 apiKey = conf['apiKey']
