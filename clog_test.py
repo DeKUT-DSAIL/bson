@@ -16,7 +16,7 @@ API_BASE_URL = 'https://datahub.tahmo.org'
 API_MAX_PERIOD = '365D'
 
 # Load json cofig file
-with open('config.json') as f:
+with open('/content/config.json') as f:
     conf = json.load(f)
 
 apiKey = conf['apiKey']
@@ -65,22 +65,25 @@ def getVariables():
             variables[element['variable']['shortcode']] = element['variable']
     return variables
 
-def getStations(longitude=[], latitude=[], countrycode=None):
+def getStations(longitude=None, latitude=None, countrycode=None):
 
     response = __request(endpoints['STATION_INFO'], {'sort':'code'})
 
     stations = pd.json_normalize(response['data'])
+    # print(stations['code'])
     if countrycode:
         return stations[stations['location.countrycode'] == f'{countrycode.upper()}']
     # Retrieving by latitude and longitude
-    elif len(latitude)==1 and len(longitude)==1: 
+    elif isinstance(latitude, list) and isinstance(longitude, list): 
+      if len(latitude)==1 and len(longitude)==1:
         return stations[(stations['location.longitude'] == longitude[0]) & (stations['location.latitude'] == latitude[0])]
     # Given a range to look at
-    elif len(latitude)==2 and len(longitude)==2:
+      elif len(latitude)==2 and len(longitude)==2:
         latitude = sorted(latitude)
         longitude = sorted(longitude)
         return stations[(stations['location.longitude'] >= longitude[0]) & (stations['location.longitude'] <= longitude[1]) & (stations['location.latitude'] >= latitude[0]) & (stations['location.latitude'] <= latitude[1])]
     else:
+        # print('SDFGHJKDFGHJDFGHJ')
         return stations
 
 def __splitDateRange(inputStartDate, inputEndDate):
@@ -480,6 +483,7 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, st
     else:
         stations_ = getStations(longitude, latitude, countrycode)
         stations = list(stations_['code'])
+        # print(stations_)
         stations_pr = getMultiples(stations, csv_file, startdate, enddate, variables, dataset='controlled')
 
     df_oth= []
@@ -626,8 +630,8 @@ def parse_args():
     parser.add_argument('--endDate', type=str, help='EndDate to retrieve the data')
 
     # Latitude and longitude
-    parser.add_argument('--latitude', type=float, help='Pass one for a particular station and two for a range in the region')
-    parser.add_argument('--longitude', type=float, help='Pass one for a particular station and two for a range in the region')
+    parser.add_argument('--latitude', type=float, nargs= '+', help='Pass one for a particular station and two for a range in the region')
+    parser.add_argument('--longitude', type=float, nargs= '+', help='Pass one for a particular station and two for a range in the region')
 
     # Countrycode
     parser.add_argument('--countrycode', type=str, help='Retrieve stations by their country code')
@@ -648,6 +652,6 @@ if __name__ == '__main__':
     # getClogs(startdate='2017-01-01', enddate='2021-10-31', latitude=[-6.848668], longitude=[39.082174])
     if args.startDate and args.endDate or args.latitude or args.longitude or args.countrycode or args.csvfile or args.station or args.MultipleStations:
         getClogs(startdate=args.startDate, enddate=args.endDate, 
-                 latitude=[args.latitude], longitude=[args.longitude], countrycode=args.countrycode, 
+                 latitude=args.latitude, longitude=args.longitude, countrycode=args.countrycode, 
                  csv_file=args.csvfile, station=args.station, multipleStations=args.MultipleStations)
 
