@@ -600,17 +600,27 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, st
     except UnboundLocalError:
         df_new = stations_pr
 
-    df_new = pd.DataFrame([pd.to_numeric(df_new[i]) for i in df_new.columns]).T    
+#     df_new = pd.DataFrame([pd.to_numeric(df_new[i]) for i in df_new.columns]).T    
 
     for cl in df_new.columns:
     
         if cl.split('_')[-1] != 'clogFlag':
-            
+    
             if f'{cl}_clogFlag' not in df_new.columns:
                 df_new[f'{cl}_clogFlag'] = [0 for i in range(len(df_new))]
-                
+
             else:
-                df_new[f'{cl}_clogFlag'] = df_new[f'{cl}_clogFlag'].fillna(0, axis=0) 
+                df_new[f'{cl}_clogFlag'] = df_new[f'{cl}_clogFlag'].fillna(0, axis=0)
+
+        else:
+            if df_new[cl].dtype == 'object':
+                df_new[cl] = df_new[cl].replace('1.0;1.0', '1', regex=True)
+                df_new[cl] = df_new[cl].replace('1;1.0', '1', regex=True)
+                df_new[cl] = pd.to_numeric(df_new[cl])
+                df_new[cl] = df_new[cl].astype(int)
+            else:
+                df_new[cl] = df_new[cl].astype(int)
+            
 
     # Rearranging the columns and saving the file
     df_new = df_new.reindex(sorted(df_new.columns), axis=1)
