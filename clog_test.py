@@ -10,6 +10,8 @@ import gc
 import requests
 import numpy as np
 import argparse
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Constants
 API_BASE_URL = 'https://datahub.tahmo.org'
@@ -612,8 +614,17 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, st
     df_new = df_new.reindex(sorted(df_new.columns), axis=1)
    
     df_new = df_new.reset_index()
-    df_new.to_csv(f'{csv_file}2.csv', index=False)             
+    df_new.to_csv(f'{csv_file}2.csv', index=False)   
+    return df_new     
 
+
+# Visualize the data   
+# def getVisual(station, startDate=None, endDate=None, variables=None, dataset='controlled'):
+#     df = getMeasurements(station, startDate, endDate, variables, dataset)
+#     print(df)
+#     # plt.plot(x=df['Date'], y=df[])
+#     return df.plot()
+#     return plt.legend()
 
 # Adding arguments to getclogs via terminal
 # Get stations 
@@ -651,3 +662,4 @@ if __name__ == '__main__':
                  latitude=[args.latitude], longitude=[args.longitude], countrycode=args.countrycode, 
                  csv_file=args.csvfile, station=args.station, multipleStations=args.MultipleStations)
 
+    # getVisual('TA00128', startDate='2018-01-02', endDate='2018-02-01', variables=['pr'])
