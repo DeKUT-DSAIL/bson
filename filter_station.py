@@ -2,6 +2,7 @@ import requests
 import urllib.parse
 import pandas as pd
 import argparse
+import dateutil.parser
 
 
 def getLocation(address):
@@ -9,7 +10,8 @@ def getLocation(address):
     return requests.get(url).json()
 
 
-def getStationsInfo():
+def getStationsInfo(station=None, multipleStations=[]):
+    df = []
     reqUrl = "https://datahub.tahmo.org/services/assets/v2/stations"
     headersList = {
     "Accept": "*/*",
@@ -19,9 +21,22 @@ def getStationsInfo():
 
     payload = ""
     response = requests.request("GET", reqUrl, data=payload,  headers=headersList).json()
-    return pd.json_normalize(response['data']).drop('id', axis=1)
+    info = pd.json_normalize(response['data']).drop('id', axis=1)
+    if station:
+        return info[info['code'] == station.upper()]
+    elif len(multipleStations) >= 1:
+        # if isinstance(multipleStations, list):
+        for mult in multipleStations:
+            df.append(info[info['code'] == mult])
+            df2 = pd.concat(df, axis=1)
+                # print(df2)
+        return df2
+    else:
+        return info
 
-def filterStations(address, csvfile='KEcheck3.csv'):
+def filterStations(address, startDate=None, endDate=None, csvfile='KEcheck3.csv'):
+    # startdate = dateutil.parser.parse(startDate)
+    # enddate = dateutil.parser.parse(endDate)        
     location = getLocation(address)
     boundingbox = list(map(float, location[0]['boundingbox']))
     boundingbox_lat = sorted(boundingbox[0:2])
@@ -34,9 +49,22 @@ def filterStations(address, csvfile='KEcheck3.csv'):
     
     # read the csv file
     ke_chec = pd.read_csv(csvfile)
-    ke_chec = ke_chec.set_index('Date')
+    ke_chec.Date = ke_chec.Date.astype('datetime64')
+    # print(ke_chec.info())
 
-    return ke_chec[[col for bbox in bounds for col in ke_chec if bbox in col]].reset_index().to_csv(f'{address}.csv', index=False)
+    # ke_chec = ke_chec.set_index('Date')
+    if startDate and endDate:
+        startdate = dateutil.parser.parse(startDate)
+        enddate = dateutil.parser.parse(endDate)
+        begin = ke_chec['Date'][ke_chec['Date'] == startdate].index.to_numpy()[0]
+        end = ke_chec['Date'][ke_chec['Date'] == enddate].index.to_numpy()[0]
+        ke_chec = ke_chec.iloc[begin:end+1]
+        ke_chec = ke_chec.set_index('Date')
+
+        return ke_chec[[col for bbox in bounds for col in ke_chec if bbox in col]]
+    else:
+        ke_chec = ke_chec.set_index('Date')
+        return ke_chec[[col for bbox in bounds for col in ke_chec if bbox in col]]
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Locating the different stations')
