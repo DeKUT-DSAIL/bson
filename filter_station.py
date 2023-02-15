@@ -25,12 +25,7 @@ def getStationsInfo(station=None, multipleStations=[]):
     if station:
         return info[info['code'] == station.upper()]
     elif len(multipleStations) >= 1:
-        # if isinstance(multipleStations, list):
-        for mult in multipleStations:
-            df.append(info[info['code'] == mult])
-            df2 = pd.concat(df, axis=1)
-                # print(df2)
-        return df2
+        return info[info['code'].isin(multipleStations)]
     else:
         return info
 
