@@ -1,17 +1,16 @@
-import sys
+# import sys
 import pandas as pd
 import json
-import os
+# import os
 
-import time
+# import time
 import dateutil.parser
 import datetime
 import gc
 import requests
 import numpy as np
 import argparse
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 # Constants
 API_BASE_URL = 'https://datahub.tahmo.org'
@@ -381,7 +380,7 @@ def getMeasurements(station, startDate=None, endDate=None, variables=None, datas
         # Clean up memory.
         del series
         gc.collect()
-
+        # print(df)
         return df
 
 
@@ -392,38 +391,26 @@ def getMultiples(stations_list, csv_file, startDate, endDate, variables, dataset
         df_stats = []
         
         for station in stations_list:
-
             print(stations_list.index(station))
-            # if station not in problem:
             try:
                 data = getMeasurements(station, startDate, endDate, variables)
                 agg_data = aggregate_variables(data)
-                # df_stats.append(data)
                 df_stats.append(agg_data)
-                df = pd.concat(df_stats, axis=1)
-                df.to_csv(f'{csv_file}.csv')
-            except KeyboardInterrupt:
-                break
-                
-                # print(df)
-            # except UnboundLocalError:
-            #     problems.append(station)
-            #     print(problems)
-            # except requests.exceptions.ConnectTimeout:
-            #     error_list.append(station)
             except:
                 error_list.append(station)
-                
+                with open('Station.txt', 'w') as dfb:
+                  dfv = dfb.write(f'{station}')
         
-        if len(error_list) >= 1:
-            with open('Station.txt', 'w') as dfb:
-                  dfv = dfb.write(f'{error_list}')
-        #     getMultiples(error_list, 'connectionLost')
-        
+        if len(df_stats) > 0:
+            df = pd.concat(df_stats, axis=1)
+            df.to_csv(f'{csv_file}.csv')
+            return df
+
+    
     else:
         raise ValueError('Pass in a list')
     
-    return df
+
         
 
 
@@ -495,21 +482,22 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, st
     other_failure = list(json_data[json_data['description'].str.contains('batter')].index)
     clog = list(json_data[~json_data['description'].str.contains('batter')].index)
 
+    # Check if there is data
+    if stations_pr.empty:
+        print('Station had no data within the specified Time Frame')
+        return 
+    
     for cols in stations_pr.columns:
         for ind, row in json_data.iterrows():
             station_sensor = f'{row["stationCode"]}_{row["sensorCode"]}'
             if station_sensor == cols:
 
-                # print(row['startDate'])
                 '''Add to chose the range to filter'''
                 startDate = dateutil.parser.parse(startdate)
                 endDate = dateutil.parser.parse(enddate)
-                # startDate = dateutil.parser.parse('2017-01-01T00:00:00.000Z')
-                # endDate = dateutil.parser.parse('2022-10-31T00:00:00.000Z')
+
                 rowStartDate = dateutil.parser.parse(dateutil.parser.parse(row['startDate']).strftime('%Y-%m-%d'))
                 rowEndDate = dateutil.parser.parse(dateutil.parser.parse(row['endDate']).strftime('%Y-%m-%d'))
-                # rowEndDate = pd.to_datetime(row['endDate']).dt.tz_localize(None)
-                # rowStartDate = pd.to_datetime(row['startDate']).dt.tz_localize(None)
 
                 if startDate < rowStartDate and endDate > rowEndDate:                    
                     if ind in other_failure:
@@ -609,7 +597,7 @@ def getClogs(startdate, enddate, longitude=[], latitude=[], countrycode=None, st
         if cl.split('_')[-1] != 'clogFlag':
     
             if f'{cl}_clogFlag' not in df_new.columns:
-                df_new[f'{cl}_clogFlag'] = [0 for i in range(len(df_new))]
+                df_new[f'{cl}_clogFlag'] = 0
 
             else:
                 df_new[f'{cl}_clogFlag'] = df_new[f'{cl}_clogFlag'].fillna(0, axis=0)
