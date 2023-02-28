@@ -3,7 +3,6 @@ import urllib.parse
 import pandas as pd
 import argparse
 import dateutil.parser
-from haversine import Unit
 import math
 
 # Get the centre point of the address
