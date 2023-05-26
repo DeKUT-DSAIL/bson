@@ -23,3 +23,6 @@ pip install filter-stations
 import filter_stations as fs
 ```
 
+![newplot](https://github.com/DeKUT-DSAIL/bson/assets/88529649/90778fce-33f9-4a6e-847c-9da466465774)
+
+
