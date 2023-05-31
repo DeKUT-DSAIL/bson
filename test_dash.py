@@ -2,18 +2,20 @@ from dash import Dash, dcc, html, Input, Output
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
+import country_converter as coco
+from collections import defaultdict
 
 # for testing purposes
-from filter_stations import retreive_data, Interactive_maps, Filter
+# from filter_stations import retreive_data, Interactive_maps, Filter
 import json
-# Authentication
-with open('config.json') as f:
-    conf = json.load(f)
+# # Authentication
+# with open('config.json') as f:
+#     conf = json.load(f)
 
-apiKey = conf['apiKey']
-apiSecret = conf['apiSecret']
+# apiKey = conf['apiKey']
+# apiSecret = conf['apiSecret']
 
-fs = retreive_data(apiKey, apiSecret)
+# fs = retreive_data(apiKey, apiSecret)
 
 # all the data
 stations = pd.read_csv('station_flags.csv', parse_dates=['Date']).set_index('Date')
@@ -42,7 +44,7 @@ clog_prop_p = clog_prop.apply(lambda x: round(x/x.sum()*100, 2), axis=1)
 met_code_date = metadata[['code', 'installationdate']]
 
 app = Dash(__name__)
-
+# TA00162_S000169_clogFlags
 
 app.layout = html.Div([
     html.H4('Intensity of the clogs'),
@@ -50,7 +52,7 @@ app.layout = html.Div([
     dcc.Dropdown(
         id="candidate",
         options=[2017, 2018, 2019, 2020, 2021, 2022],
-        value="AMZN",
+        value=2022,
         clearable=False,
     ),
     dcc.Graph(id="graph"),
@@ -65,23 +67,23 @@ app.layout = html.Div([
         clearable=False,
     ),
 
-    html.H4('Precipitation analysis'),
-    dcc.Graph(id="time-series-chart2"),
-    html.P("Choose a station:"),
-    dcc.Dropdown(
-        id="ticker2",
-        options=["AMZN", "FB", "NFLX"],
-        value="AMZN",
-        clearable=False,
-    ),
-
     html.H4('Clog flag analysis'),
     dcc.Graph(id="time-series-chart3"),
     html.P("Choose a station:"),
     dcc.Dropdown(
         id="ticker3",
-        options=["AMZN", "FB", "NFLX"],
-        value="AMZN",
+        options=list(clog.columns),
+        value="TA00001_S000007_clogFlags",
+        clearable=False,
+    ),
+
+    html.H4('Precipitation analysis'),
+    dcc.Graph(id="time-series-chart2"),
+    html.P("Choose a station:"),
+    dcc.Dropdown(
+        id="ticker2",
+        options=list(pr.columns),
+        value='TA00001_S000007',
         clearable=False,
     ),
 ])
@@ -103,7 +105,7 @@ def display_time_series(ticker):
 def display_time_series(ticker2):
     print(ticker2)
     df = px.data.stocks() # replace with your own data source
-    fig = px.line(pr[pr.columns[0:3]],
+    fig = px.line(pr[ticker2],
               title='Amount of precipitation per day',)
     return fig
 
@@ -112,9 +114,9 @@ def display_time_series(ticker2):
     Input("ticker3", "value"))
 def display_time_series(ticker3):
     print(ticker3)
-    df = px.data.stocks() # replace with your own data source
-    fig = px.line(clog[clog.columns[0:3]],
-              title='clogFlag per day',)
+    # df = px.data.stocks() # replace with your own data source
+    fig = px.line(clog[ticker3],
+              title='Clog Flag per day',)
     return fig
 
 @app.callback(
@@ -123,12 +125,57 @@ def display_time_series(ticker3):
 def loc(candidate):
     with open('african_countries.json') as af:
         afri = json.load(af)
-
+    
+    # filter by the year selected
+    clog_year = clog[clog.index.year == candidate]
     point = [-0.833111, 36.669667]
 
+    # groupby country
+    met2 = metadata.groupby(['location.countrycode', 'code']).count().index
+    met3 = pd.DataFrame(data=[met2.get_level_values(0), met2.get_level_values(1)]).T
+
+    country_dict = dict()
+
+    for country in met3[0].unique():
+        country_dict[country] = met3.loc[met3[0] == country][1].values
+
+    
+    val_key = defaultdict(list)
+
+    # val_key = dict()
+    for key, value in country_dict.items():
+        for clog_f in clog_year.columns:
+            if clog_f.split('_')[0] in value:
+                # get the value counts for each key
+                if len(clog_year[clog_f].value_counts().values) >= 2 and clog_year[clog_f].value_counts().index[1] != 2: # this shows it has a clog flag of 1
+                    # get the number of stations with the clog flag
+                    val_key[key].append(clog_f)
+
+    # get the sum of the keys and replace with the number
+    for key, value in val_key.items():
+        # print(value)
+        val_key[key] = len(set([i.split('_')[0] for i in value]))
+
+    g_tr = dict(met3.groupby(0).count().reset_index().values)
+    val_key = dict(val_key)
+
+    for ky, vl in g_tr.items():
+        # print(val_key[ky])
+        try:
+            # print(val_key[ky])
+            val_key[ky] = round((val_key[ky]/g_tr[ky])*100, 2)
+        except KeyError as e:
+            # print(e.args[0])
+            val_key[e.args[0]] = 0
+
+    count_list_st = coco.convert(list(val_key.keys()), to='name_short')
+
+    # for key, val in val_key.items():
+    #     val_key[key] = round((val/tot)*100, 2)
+
 # Create a list of African countries and their respective population
-    countries = afri['countries']
-    population = [44200000, 100000, 22, 20, 25868000, 10575614, 2302878, 19034397, 10114505, 531239, 22709892, 4745185, 14497000, 806153, 47410000, 24294750, 956985, 91251839, 1358276, 4474690, 1093238, 91205855, 2025137, 2234858, 27499924, 10531273, 1890908, 49699862, 2074000, 4853516, 6678559, 19181144, 16745303, 18541980, 4077347, 1268316, 35126261, 29668834, 25068000, 18045729, 19194473, 11498000, 10139177, 8967541, 15854360, 5875414, 57398425, 12575714, 3024405, 44877000, 7714502, 11659174, 40006799, 16913261, 12894316]
+    countries = count_list_st
+    population = list(val_key.values())
 
 # Create a data dictionary for Plotly
     data = dict(
@@ -156,7 +203,6 @@ def loc(candidate):
 # Create a figure using the data and layout dictionaries
     fig = go.Figure(data=[data], layout=layout)
     fig.update_layout(mapbox_zoom=17, mapbox_center = {"lat": point[0], "lon": point[1]})
-    return fig
     return fig
 
 
